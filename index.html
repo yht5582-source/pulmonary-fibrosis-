@@ -2,7 +2,8 @@
 :root{--ink:#122b40;--muted:#607688;--navy:#102c43;--teal:#0b7c79;--light:#f3f7f8;--line:#dce6ea;--warn:#fff3dd;--risk:#9b3128;--green:#dff4ee}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,'Noto Sans TC',sans-serif;color:var(--ink);background:var(--light);line-height:1.65}header{background:linear-gradient(115deg,#102c43,#0c6070);color:white;padding:35px max(20px,calc((100vw - 1150px)/2))}header h1{font-size:clamp(26px,4vw,41px);margin:6px 0}header p{max-width:800px;opacity:.91}header .eyebrow{letter-spacing:.14em;font-size:12px;color:#a8eeee}nav{position:sticky;top:0;z-index:5;display:flex;gap:7px;overflow:auto;background:#fff;border-bottom:1px solid var(--line);padding:11px max(12px,calc((100vw - 1160px)/2))}nav button{white-space:nowrap;background:transparent;border:1px solid #dce6ea;color:var(--ink);border-radius:999px;padding:8px 14px;cursor:pointer}nav button.active,nav button:hover{background:var(--navy);color:#fff}main{max-width:1160px;margin:27px auto;padding:0 17px 60px}.tab{display:none}.tab.active{display:block}.lead{color:var(--muted);margin:0 0 22px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:#fff;border:1px solid var(--line);box-shadow:0 3px 16px #13384b0a;border-radius:16px;padding:22px;margin-bottom:17px}.card h3{margin:0 0 12px}h2{font-size:25px;margin:0 0 9px}h3{font-size:18px}p{margin-top:6px}ul{padding-left:21px}.muted,.hint{color:var(--muted)}.hint{font-size:13px}.notice{border-left:4px solid #db9c27;background:var(--warn);padding:13px 16px;border-radius:8px;margin:14px 0}.good{background:var(--green);border-left:4px solid #139575;padding:13px 16px;border-radius:8px}.danger{background:#ffebea;border-left:4px solid #ce4a40;padding:13px 16px;border-radius:8px}.step{background:#eaf4f7;padding:17px;border-radius:10px;text-align:center;margin:8px 0}.arrow{text-align:center;color:var(--teal);font-size:26px}.badge{display:inline-block;background:#e3f4f1;color:#075e60;padding:3px 9px;border-radius:30px;font-size:12px;font-weight:700;margin-right:6px}label{display:block;font-size:14px;font-weight:650;margin:9px 0 4px}input[type=number],select,textarea{width:100%;border:1px solid #bfcfd8;border-radius:9px;padding:11px;background:#fff;color:var(--ink);font-size:15px}input[type=checkbox]{accent-color:var(--teal)}.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin:10px 0}.check input{margin-top:6px}.btn{background:var(--teal);color:#fff;padding:11px 17px;border:0;border-radius:9px;font-weight:700;cursor:pointer}.btn.secondary{background:#e5eef2;color:var(--ink)}.btn:hover{filter:brightness(.92)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.result{margin-top:16px}.small{font-size:13px}table{width:100%;border-collapse:collapse}th,td{padding:11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf4f6}.table-wrap{overflow:auto}.mechanism{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}.mechanism article{flex:1 1 220px;background:#edf5f6;border-radius:13px;padding:15px}.mechanism b{color:#086b72}.pill{background:#d9eeeb;padding:2px 8px;border-radius:10px;font-size:12px}details{border:1px solid var(--line);border-radius:11px;background:#fff;margin:8px 0;overflow:hidden}summary{cursor:pointer;font-weight:700;padding:13px 17px}details>div{padding:5px 17px 17px}.casebtn{display:block;width:100%;text-align:left;border:1px solid var(--line);background:white;border-radius:10px;padding:13px 15px;cursor:pointer;margin:8px 0}.casebtn.selected{border-color:var(--teal);background:#dff4ee}.choices{display:grid;gap:8px}.choices label{border:1px solid var(--line);border-radius:8px;padding:10px;cursor:pointer;font-weight:400}.choices label:has(input:checked){background:#e0f3ee;border-color:var(--teal)}.quiz-head{display:flex;justify-content:space-between;gap:12px}.progress{height:8px;background:#dce7eb;border-radius:9px;overflow:hidden}.progress div{height:100%;background:var(--teal)}.mind ul{list-style:none;padding-left:19px;border-left:2px solid #bdd9dc}.mind li{margin:7px 0}.mind summary{background:#f0f7f8}.source a{overflow-wrap:anywhere;color:#006d7a}.footer{color:#6e7f8c;font-size:12px;text-align:center;margin:40px 0}.quick{display:flex;gap:12px;flex-wrap:wrap}.quick>div{background:#ffffff1d;padding:10px;border-radius:10px;font-size:12px}.count{font-size:28px;font-weight:750;color:var(--teal)}@media(max-width:750px){.grid,.grid3{grid-template-columns:1fr}.card{padding:16px}nav{padding:8px}header{padding:25px 18px}.table-wrap{font-size:13px}}
 @media print{nav,.btn,.actions{display:none!important}.tab{display:block!important}header{color:#111;background:white}main{max-width:none}.card{break-inside:avoid}}
 
-.wstep{display:none}.wstep.active{display:block}.wtabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.wtab{border:1px solid #b8ccd0;background:#e7f0f1;padding:9px;border-radius:9px;cursor:pointer}.wtab.on{background:#0b7c79;color:#fff}.wgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px}.wchecks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 17px}.wgrid input,.wgrid select{width:100%}.wreport .card{box-shadow:none}.wreport ul{padding-left:24px}@media(max-width:700px){.wgrid,.wchecks{grid-template-columns:1fr}}</style></head><body><header><div class="eyebrow">EVIDENCE-BASED ILD CLINICAL NAVIGATOR · 2026.11</div><h1>肺纖維化診療導航</h1><p>IPF・PPF・CTD-ILD ｜ HRCT 診斷、疾病進展、用藥決策、台灣健保核對、機轉教學、8 病例與 20 題進階測驗</p><div class="quick"><div>ATS/ERS/JRS/ALAT 2022</div><div>ERS/EULAR CTD-ILD 2025</div><div>台灣健保 6.2.7</div><div>教學輔助・非自動處方</div></div></header><nav id="nav"></nav><main>
+.wstep{display:none}.wstep.active{display:block}.wtabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.wtab{border:1px solid #b8ccd0;background:#e7f0f1;padding:9px;border-radius:9px;cursor:pointer}.wtab.on{background:#0b7c79;color:#fff}.wgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px}.wchecks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 17px}.wgrid input,.wgrid select{width:100%}.wreport .card{box-shadow:none}.wreport ul{padding-left:24px}@media(max-width:700px){.wgrid,.wchecks{grid-template-columns:1fr}}
+.phase{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:12px 0;background:#fff}.phase h4{margin:2px 0 6px;color:var(--navy);font-size:16px}.drugs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.drug{border:1px solid var(--line);border-left:5px solid #9fb3bd;border-radius:10px;padding:10px 12px;font-size:14px}.drug ul{padding-left:18px;margin:6px 0 0}.drughead{display:flex;justify-content:space-between;gap:8px;align-items:center}.stbadge{font-size:12px;font-weight:700;border-radius:20px;padding:2px 9px;background:#e5eef2;white-space:nowrap}.dose{margin:6px 0 0;font-weight:600}.st-first{border-left-color:#139575;background:#f1fbf8}.st-first .stbadge{background:#139575;color:#fff}.st-ok{border-left-color:#5aa9a6}.st-warn{border-left-color:#db9c27;background:#fffaf0}.st-warn .stbadge{background:#f5dfb0}.st-bad{border-left-color:#ce4a40;background:#fff5f4}.st-bad .stbadge{background:#ce4a40;color:#fff}.st-grey{opacity:.85}.st-grey .stbadge{background:#dfe5e8}.badge.hard{background:#ffe1dc;color:#9b3128}table.tl td:first-child{white-space:nowrap;font-weight:650}@media(max-width:900px){.drugs{grid-template-columns:1fr}}</style></head><body><header><div class="eyebrow">EVIDENCE-BASED ILD CLINICAL NAVIGATOR · 2026.11</div><h1>肺纖維化診療導航</h1><p>IPF・PPF・CTD-ILD ｜ HRCT 診斷、疾病進展、用藥決策、台灣健保核對、治療計畫設計、機轉教學、11 病例（含 3 例高難度）與 25 題測驗</p><div class="quick"><div>ATS/ERS/JRS/ALAT 2022</div><div>ERS/EULAR CTD-ILD 2025</div><div>台灣健保 6.2.7</div><div>教學輔助・非自動處方</div></div></header><nav id="nav"></nav><main>
 
 <section class="tab" id="wizard">
 <h2>臨床逐步導引｜從症狀到診斷與治療</h2><p class="lead">輸入症狀、HRCT、血清學及肺功能趨勢，逐步評估病因、PPF、用藥劑量、安全監測及預後。所有資料僅在瀏覽器記憶體中運算；不儲存病人個資。</p>
@@ -35,7 +36,7 @@
 <div id="wcalc" aria-live="polite"></div><div class="actions"><button class="btn secondary" onclick="wGo(1)">上一步</button><button class="btn" onclick="wCalculate()">計算進展</button><button class="btn" onclick="wGo(3)">下一步 →</button></div></div>
 <div id="ws3" class="card wstep"><h3>④ 安全性、禁忌與現用藥</h3><div class="wgrid">
 <div><label>eGFR（mL/min/1.73 m²）</label><input id="wegfr" type="number" min="0" max="150" placeholder="未測可留白"></div>
-<div><label>肝功能／Child-Pugh</label><select id="wliver"><option value="unknown">尚未確認</option><option value="normal">無已知肝功能障礙</option><option value="a">Child-Pugh A</option><option value="bc">Child-Pugh B／C 或嚴重肝損傷</option></select></div>
+<div><label>肝功能／Child-Pugh</label><select id="wliver"><option value="unknown">尚未確認</option><option value="normal">無已知肝功能障礙</option><option value="a">Child-Pugh A</option><option value="b">Child-Pugh B</option><option value="c">Child-Pugh C 或嚴重肝損傷</option></select></div>
 <div><label>目前抗纖維化藥物</label><select id="wcurrent"><option value="none">未服用</option><option value="nint">Nintedanib</option><option value="pir">Pirfenidone</option><option value="ner">Nerandomilast</option><option value="unknown">其他／不明</option></select></div></div>
 <div class="wchecks"><label class="check"><input id="wbleed" type="checkbox">抗凝血／出血風險</label><label class="check"><input id="wgi" type="checkbox">腹瀉、食慾差、體重下降</label><label class="check"><input id="wimmune" type="checkbox">正在使用免疫抑制劑</label><label class="check"><input id="wpreg" type="checkbox">懷孕／備孕相關風險</label><label class="check"><input id="winfect" type="checkbox">目前疑似感染或急性不穩定</label></div><div class="actions"><button class="btn secondary" onclick="wGo(2)">上一步</button><button class="btn" onclick="wGo(4)">產生個別化建議 →</button></div></div>
 <div id="ws4" class="wstep wreport"><div class="card"><h3>⑤ 診斷、治療優先順序、劑量安全與預後</h3><div id="wresult" aria-live="polite"></div><div class="actions"><button class="btn secondary" onclick="wGo(3)">回到輸入</button><button class="btn secondary" onclick="window.print()">列印</button><button class="btn secondary" onclick="wReset()">清除輸入</button></div></div></div>
@@ -43,73 +44,280 @@
 <section class="tab active" id="overview"><h2>臨床總覽</h2><p class="lead">先判別病因，再判定進展，最後整合治療與給付資格；UIP 影像型態不等於 IPF。</p><div class="grid3"><div class="card"><span class="badge">IPF</span><h3>特發性肺纖維化</h3><p>排除 CTD、過敏原、藥物與職業暴露後，經 HRCT/病理及 MDD 判讀。抗纖維化治療應及早討論。</p></div><div class="card"><span class="badge">PPF</span><h3>非 IPF 的進行性纖維化</h3><p>已證實纖維化，1 年內三構面至少兩項惡化，並排除其他原因。國際診斷與健保規則分開評估。</p></div><div class="card"><span class="badge">CTD-ILD</span><h3>自體免疫關聯 ILD</h3><p>評估 SSc、RA、IIM、SjD、SLE、MCTD；活動性發炎需原發病治療，必要時合併抗纖維化藥。</p></div></div><div class="card"><h3>核心決策路徑</h3><div class="step">疑似 ILD → 病史、HRCT、PFT（FVC／DLCO）、6MWT、血清學與必要的暴露評估</div><div class="arrow">↓</div><div class="step">HRCT 型態 + 臨床證據 + 多專科討論（MDD）</div><div class="arrow">↓</div><div class="grid"><div class="step">IPF → 抗纖維化藥／支持療法／肺移植評估</div><div class="step">非 IPF → 針對病因治療 → 每 3–6 個月評估 PPF</div></div><div class="notice"><b>高風險警示：</b>短期急速缺氧、疑似 AE-ILD 或 anti-MDA5 相關快速進展時，需立即排除感染、肺栓塞、心衰、藥物性肺損傷，並進行緊急專科評估；不可只使用慢性 PPF 規則。</div></div></section>
 <section class="tab" id="hrct"><h2>HRCT / UIP 分類引導</h2><p class="lead">提供結構化影像特徵輸入；不取代影像科判讀或正式 MDD。</p><div class="card"><div class="grid"><div><label>纖維化分布</label><select id="dist"><option value="basal">胸膜下、基底部為主</option><option value="diffuse">瀰漫型／無明確優勢</option><option value="alt">上中肺葉、中央／支氣管血管束旁、顯著馬賽克等</option></select><label>Honeycombing（蜂窩化）</label><select id="honey"><option value="no">未見</option><option value="yes">存在</option><option value="uncertain">不確定</option></select><label>Traction bronchiectasis / bronchiolectasis</label><select id="traction"><option value="yes">存在</option><option value="no">未見／不確定</option></select></div><div><label>其他診斷提示</label><select id="alt"><option value="no">無明顯替代診斷特徵</option><option value="yes">存在：明顯 mosaic、air trapping、三密度徵、瀰漫 GGO、結節等</option></select><label>結締組織疾病／暴露／藥物可解釋原因</label><select id="cause"><option value="none">尚未找到（仍須完整排除）</option><option value="ctd">已知 CTD</option><option value="hp">可能 HP 或暴露相關</option><option value="drug">可能藥物／職業因素</option></select><label>判讀可信度</label><select id="confidence"><option value="good">影像品質適合</option><option value="poor">影像品質不佳／需專家重判</option></select></div></div><div class="actions"><button class="btn" onclick="evalHRCT()">分析影像型態</button></div><div id="hrctout" class="result" aria-live="polite"></div></div><div class="card"><h3>分類提示</h3><div class="table-wrap"><table><tr><th>分類</th><th>重點</th><th>下一步</th></tr><tr><td>UIP</td><td>胸膜下／基底部為主＋蜂窩化，可伴牽拉性支氣管擴張</td><td>先排除次發性 UIP</td></tr><tr><td>Probable UIP</td><td>典型分布＋牽拉性支氣管擴張，無蜂窩化</td><td>依情境 MDD；部分可不需切片</td></tr><tr><td>Indeterminate</td><td>有纖維化但不足以歸類</td><td>考慮進一步診斷評估</td></tr><tr><td>Alternative</td><td>不典型分布、三密度徵、明顯 air trapping 等</td><td>優先鑑別 HP、NSIP、CTD-ILD 等</td></tr></table></div></div></section>
 <section class="tab" id="ppf"><h2>PPF 診斷計算器</h2><p class="lead">2022 ATS：僅適用於已確立肺纖維化的非 IPF ILD，過去 12 個月三類中的至少兩類符合，且沒有其他解釋。</p><div class="card"><div class="grid"><div><label>初始 FVC % predicted</label><input id="fvc0" type="number" min="0" max="150" step="0.1" value="75"><label>追蹤 FVC % predicted</label><input id="fvc1" type="number" min="0" max="150" step="0.1" value="68"></div><div><label>初始 Hb-corrected DLCO % predicted</label><input id="dl0" type="number" min="0" max="150" step="0.1" value="55"><label>追蹤 Hb-corrected DLCO % predicted</label><input id="dl1" type="number" min="0" max="150" step="0.1" value="43"></div></div><label class="check"><input type="checkbox" id="sym">呼吸症狀惡化</label><label class="check"><input type="checkbox" id="radi" checked>HRCT 有符合定義的纖維化影像進展</label><label class="check"><input type="checkbox" id="fib" checked>已由 HRCT 確認纖維化且非 IPF</label><label class="check"><input type="checkbox" id="within" checked>數據變化發生於一年內</label><label class="check"><input type="checkbox" id="excl" checked>已排除感染、貧血、肺血管病、心衰等其他解釋</label><button class="btn" onclick="evalPPF()">計算並判定</button><div id="ppfout" class="result" aria-live="polite"></div><p class="hint">FVC 與 DLCO 變化採 % predicted 的「絕對百分點」，不是相對百分率；生理指標只計算為三類之一，即使 FVC 與 DLCO 均達標也只算一類。</p></div></section>
-<section class="tab" id="treat"><h2>個別化治療決策支援</h2><p class="lead">輸入疾病型態、進展、腎功能與禁忌因子，輸出「可討論藥物＋劑量範例＋安全監測＋台灣核對」。非自動開立處方。</p><div class="card"><div class="grid"><div><label>ILD 類型</label><select id="disease"><option value="ipf">IPF（經 MDD 確診）</option><option value="ss">SSc-ILD</option><option value="ra">RA-ILD</option><option value="iim">IIM / myositis-ILD</option><option value="otherctd">其他 CTD-ILD（SLE／SjD／MCTD）</option><option value="hp">慢性纖維化 HP</option><option value="other">其他非 IPF 纖維化 ILD</option></select><label>目前是否符合 PPF</label><select id="progress"><option value="no">尚未符合／不適用</option><option value="yes">已符合 ATS PPF</option><option value="uncertain">未確認</option></select><label>發炎活動性</label><select id="inflammation"><option value="no">無明顯發炎活動</option><option value="yes">存在活動性發炎／可逆 GGO</option><option value="urgent">快速進展或急性缺氧</option></select><label>HRCT 型態</label><select id="pattern"><option value="uip">UIP / probable UIP</option><option value="nsip">NSIP / organizing pattern</option><option value="other">其他／未確定</option></select></div><div><label>FVC % predicted</label><input id="txfvc" type="number" value="67" min="0" max="150"><label>DLCO % predicted</label><input id="txdlco" type="number" value="45" min="0" max="150"><label>eGFR（mL/min/1.73m²）</label><input id="txegfr" type="number" value="65" min="0" max="150"><label>風險與用藥背景</label><label class="check"><input id="liver" type="checkbox">肝功能異常／慢性肝病</label><label class="check"><input id="bleed" type="checkbox">顯著出血風險或抗凝血治療</label><label class="check"><input id="gi" type="checkbox">明顯腹瀉或無法耐受胃腸道不良反應</label><label class="check"><input id="pir" type="checkbox">正在使用 Pirfenidone</label><label class="check"><input id="mmf" type="checkbox">正在使用 MMF</label></div></div><div class="actions"><button class="btn" onclick="evalTreatment()">產生個別化建議</button><button class="btn secondary" onclick="window.print()">列印教學摘要</button></div><div id="txout" class="result" aria-live="polite"></div></div></section>
-<section class="tab" id="meds"><h2>藥物機轉與研究</h2><p class="lead">不同訊號路徑的藥物可能互補，但跨試驗 FVC 結果不可直接作頭對頭比較。</p><div class="mechanism"><article><h3>Nintedanib</h3><b>PDGFR / FGFR / VEGFR → ↓ TK signaling</b><p>抑制纖維母細胞增生、遷移。典型劑量 150 mg PO BID，依耐受性可降為 100 mg BID。注意腹瀉、肝酵素、出血風險。</p></article><article><h3>Pirfenidone</h3><b>TGF-β 等促纖維化訊號調節</b><p>抑制膠原生成，完整機轉尚未完全確立。台灣 Pirespa 200 mg 錠應依台灣仿單逐步調升，不可直接套用美國 801 mg 規格。</p></article><article><h3>Nerandomilast</h3><b>PDE4B-preferential inhibition → ↑ cAMP</b><p>18 mg BID（美國核准仿單），不耐受時視條件減至 9 mg BID；合併 pirfenidone 另有特別限制。腹瀉、體重變化與交互作用須監測。</p></article><article><h3>Inhaled Treprostinil</h3><b>Prostacyclin IP receptor → ↑ cAMP</b><p>血管擴張、潛在抗纖維化，TETON-1/2 第三期有陽性結果。不可推定台灣已核准 IPF 適應症；咳嗽、低血壓為重要注意事項。</p></article></div><div class="card"><h3>研究證據</h3><div class="table-wrap"><table><tr><th>研究</th><th>族群</th><th>主要訊息</th></tr><tr><td>INPULSIS / INBUILD / SENSCIS</td><td>IPF／進行性 ILD／SSc-ILD</td><td>Nintedanib 可減緩 FVC 下降</td></tr><tr><td>ASCEND</td><td>IPF</td><td>Pirfenidone 可減緩 FVC 下降</td></tr><tr><td>FIBRONEER-IPF / ILD</td><td>IPF／PPF</td><td>Nerandomilast 18 mg BID 改善 52 週 FVC 變化</td></tr><tr><td>TETON-1 / TETON-2</td><td>IPF</td><td>吸入 Treprostinil 研究達成關鍵 FVC 療效終點；上市適應症仍需核對</td></tr></table></div></div></section>
-<section class="tab" id="taiwan"><h2>台灣 TFDA / 健保雙軌核對</h2><p class="lead">台灣給付規定不是國際診斷標準。以下依公開文件建構初步篩檢；最後仍以申請時最新健保公告、審查規範及藥品許可證為準。</p><div class="card"><div class="table-wrap"><table><tr><th>藥品</th><th>台灣核准／可查狀態</th><th>健保判定</th></tr><tr><td>Nintedanib（Ofev）</td><td>台灣有 IPF、SSc-ILD、慢性 PF-ILD 適應症的公開資料</td><td>依 6.2.7 IPF／PF-ILD 分項事前審查</td></tr><tr><td>Pirfenidone（Pirespa）</td><td>台灣 IPF 適應症已見公開資料</td><td>依 6.2.7 IPF 項核對</td></tr><tr><td>Nerandomilast（Jascayd）</td><td>美國核准 IPF + PPF；<b>台灣當前許可證未獲本版確證</b></td><td>未核實健保給付；不可判定可申請</td></tr><tr><td>Treprostinil（吸入）</td><td>IPF 臨床第三期陽性不代表台灣 IPF 適應症核准</td><td>IPF 給付未確認；不建議視為常規可申請項目</td></tr></table></div><div class="notice">請勿將「TFDA 核准」、「有健保碼」與「此病人符合健保事前審查」視為同義。</div></div><div class="card"><h3>健保 6.2.7 初步條件檢核</h3><div class="grid"><div><label>申請類型</label><select id="nhitype"><option value="ipf">IPF</option><option value="pf">PF-ILD（非 IPF）</option></select><label>FVC % predicted</label><input type="number" id="nhifvc" value="65"><label>DLCO % predicted</label><input type="number" id="nhidlco" value="49"><label class="check"><input type="checkbox" id="nhihrct" checked>已備 HRCT 影像及報告</label></div><div><label class="check"><input type="checkbox" id="nhispec" checked>專科醫師確診並具病歷紀錄</label><label class="check"><input type="checkbox" id="nhisym" checked>呼吸困難、咳嗽等症狀已記錄</label><label class="check"><input type="checkbox" id="nhifib">PF-ILD 影像纖維化侵犯至少 10% 肺野</label><label class="check"><input type="checkbox" id="nhipft">PF-ILD 一年內 FVC ≥5 pp 或 DLCO ≥10 pp 下降</label><label class="check"><input type="checkbox" id="nhieither">PF-ILD 同時有症狀惡化或 HRCT 纖維化增加</label></div></div><button class="btn" onclick="evalNHI()">核對初次申請條件</button><div id="nhiout" class="result" aria-live="polite"></div><p class="hint">依可驗證的 6.2.7 2023 年條文及健保最新整份給付規定公告連結整理；並非已核驗 2026 年全部修訂版原文。IPF FVC >80% 且明顯症狀可依所見條文評估，不保證核准。續用／停藥／申請頻率不由本初次申請工具判斷。</p></div></section>
-<section class="tab" id="cases"><h2>8 例示範病例</h2><p class="lead">8 例包含 IPF、RA、SSc、PPF、HP、anti-MDA5 與 ESRD；每例可展開解析，並一鍵帶入個別化治療評估。病例為合成案例。</p><div class="grid"><div id="caseList"></div><div id="caseContent" class="card"></div></div></section>
-<section class="tab" id="quiz"><h2>20 題進階臨床測驗</h2><p class="lead">20 題單選，含臨床情境、HRCT、PPF 判讀、抗纖維化劑量安全、CTD-ILD 與台灣健保；逐題回饋解析與總分。</p><div class="card"><div class="quiz-head"><b id="qcount">第 1 / 20 題</b><span id="qscore">已答對 0 題</span></div><div class="progress"><div id="qprog" style="width:5%"></div></div><h3 id="qtext"></h3><div id="qchoices" class="choices"></div><div class="actions"><button class="btn" onclick="submitQuiz()" id="qsubmit">提交答案</button><button class="btn secondary" onclick="nextQuiz()" id="qnext" disabled>下一題</button><button class="btn secondary" onclick="resetQuiz()">重新測驗</button></div><div id="qexplain" class="result" aria-live="polite"></div></div></section>
+<section class="tab" id="treat"><h2>治療導引與治療計畫設計</h2><p class="lead">輸入疾病型態、進展、器官功能、合併用藥與風險，產生分階段治療計畫：急性處置 → 病因治療 → 抗纖維化藥逐一評估（劑量、減量、禁忌）→ 支持療法 → 監測時程 → 失敗與升級條件。非自動開立處方。</p><div class="card"><div class="grid3"><div><label>ILD 類型</label><select id="disease"><option value="ipf">IPF</option><option value="ss">SSc-ILD</option><option value="ra">RA-ILD</option><option value="iim">IIM / myositis-ILD</option><option value="otherctd">其他 CTD-ILD（SLE／SjD／MCTD）</option><option value="hp">慢性纖維化 HP</option><option value="other">其他非 IPF 纖維化 ILD</option><option value="undetermined">診斷未定</option></select><label class="check"><input id="txmdd" type="checkbox" checked>已完成 MDD</label><label>目前是否符合 PPF（非 IPF）</label><select id="progress"><option value="no">尚未符合／不適用</option><option value="yes">已符合 ATS PPF</option><option value="uncertain">未確認</option></select><label>發炎活動性</label><select id="inflammation"><option value="no">無明顯發炎活動</option><option value="yes">存在活動性發炎／可逆 GGO</option><option value="urgent">快速進展或急性缺氧</option></select><label>HRCT 型態</label><select id="pattern"><option value="uip">UIP / probable UIP</option><option value="nsip">NSIP / organizing pattern</option><option value="other">其他／未確定</option></select><label>目前抗纖維化藥</label><select id="txcurrent"><option value="none">未使用</option><option value="nint">Nintedanib</option><option value="pir">Pirfenidone</option><option value="ner">Nerandomilast（國外取得）</option></select><label>既往不耐受</label><select id="txintol"><option value="none">無</option><option value="nint">Nintedanib</option><option value="pir">Pirfenidone</option></select></div><div><label>FVC % predicted</label><input id="txfvc" type="number" value="67" min="0" max="150"><label>DLCO % predicted（Hb 校正）</label><input id="txdlco" type="number" value="45" min="0" max="150"><label>eGFR（mL/min/1.73m²）</label><input id="txegfr" type="number" value="65" min="0" max="150"><label>肝功能／Child-Pugh</label><select id="txliver"><option value="normal">無已知肝功能障礙</option><option value="a">Child-Pugh A</option><option value="b">Child-Pugh B</option><option value="c">Child-Pugh C</option><option value="unknown">尚未確認</option></select><label>年齡</label><input id="txage" type="number" min="18" max="110" placeholder="選填"><label>休息 SpO₂ (%)</label><input id="txspo" type="number" min="50" max="100" placeholder="選填"><label>運動最低 SpO₂ (%)</label><input id="txex" type="number" min="50" max="100" placeholder="選填"></div><div><label>風險與合併用藥</label><label class="check"><input id="txprog" type="checkbox">目前抗纖維化藥下仍進展</label><label class="check"><input id="bleed" type="checkbox">顯著出血風險或抗凝血治療</label><label class="check"><input id="gi" type="checkbox">腹瀉、食慾差或低體重</label><label class="check"><input id="txsmoke" type="checkbox">目前吸菸</label><label class="check"><input id="txcyp1a2" type="checkbox">強效 CYP1A2 抑制劑（fluvoxamine）</label><label class="check"><input id="txcyp3a" type="checkbox">強效 CYP3A 抑制劑（clarithromycin、itraconazole 等）</label><label class="check"><input id="txcyp3aind" type="checkbox">CYP3A 誘導劑（rifampicin、carbamazepine 等）</label><label class="check"><input id="txdep" type="checkbox">憂鬱或自殺意念病史</label><label class="check"><input id="txpreg" type="checkbox">懷孕／備孕</label><label class="check"><input id="mmf" type="checkbox">正在使用 MMF</label><label class="check"><input id="txsteroid" type="checkbox">Prednisolone ≥15 mg/日</label><label class="check"><input id="txsrc" type="checkbox">新發高血壓／肌酸酐上升（SSc 腎危象徵兆）</label><label class="check"><input id="txinfect" type="checkbox">疑似感染或急性不穩定</label><label class="check"><input id="txph" type="checkbox">疑似肺高壓</label></div></div><div class="actions"><button class="btn" onclick="evalTreatment()">產生治療計畫</button><button class="btn secondary" onclick="window.print()">列印治療計畫</button></div><div id="txout" class="result" aria-live="polite"></div></div></section>
+<section class="tab" id="meds"><h2>藥物機轉與研究</h2><p class="lead">不同訊號路徑的藥物可能互補，但跨試驗 FVC 結果不可直接作頭對頭比較。</p><div class="mechanism"><article><h3>Nintedanib</h3><b>PDGFR / FGFR / VEGFR → ↓ TK signaling</b><p>抑制纖維母細胞增生、遷移。典型劑量 150 mg PO BID，依耐受性可降為 100 mg BID。注意腹瀉、肝酵素、出血風險。</p></article><article><h3>Pirfenidone</h3><b>TGF-β 等促纖維化訊號調節</b><p>抑制膠原生成，完整機轉尚未完全確立。台灣 Pirespa 200 mg 錠應依台灣仿單逐步調升，不可直接套用美國 801 mg 規格。</p></article><article><h3>Nerandomilast</h3><b>PDE4B-preferential inhibition → ↑ cAMP</b><p>18 mg BID（美國 IPF／PPF 仿單）；不耐受可減至 9 mg BID，但併用 pirfenidone 時維持 18 mg、不可減量（暴露下降、9 mg 無療效）。強效 CYP3A 抑制劑併用降為 9 mg BID，CYP3A 誘導劑避免。Child-Pugh A/B 及 eGFR ≥15 不需調整；Child-Pugh C、eGFR <15 不建議。腹瀉、體重下降、憂鬱相關事件須監測。</p></article><article><h3>Inhaled Treprostinil</h3><b>Prostacyclin IP receptor → ↑ cAMP</b><p>血管擴張、潛在抗纖維化，TETON-1/2 第三期有陽性結果。不可推定台灣已核准 IPF 適應症；咳嗽、低血壓為重要注意事項。</p></article></div><div class="card"><h3>研究證據</h3><div class="table-wrap"><table><tr><th>研究</th><th>族群</th><th>主要訊息</th></tr><tr><td>INPULSIS / INBUILD / SENSCIS</td><td>IPF／進行性 ILD／SSc-ILD</td><td>Nintedanib 可減緩 FVC 下降</td></tr><tr><td>ASCEND</td><td>IPF</td><td>Pirfenidone 可減緩 FVC 下降</td></tr><tr><td>FIBRONEER-IPF / ILD</td><td>IPF／PPF</td><td>Nerandomilast 18 mg BID 改善 52 週 FVC 變化</td></tr><tr><td>TETON-1 / TETON-2</td><td>IPF</td><td>吸入 Treprostinil 研究達成關鍵 FVC 療效終點；上市適應症仍需核對</td></tr></table></div></div></section>
+<section class="tab" id="taiwan"><h2>台灣 TFDA / 健保雙軌核對</h2><p class="lead">台灣給付規定不是國際診斷標準。以下依健保 6.2.7 條文（最後修訂 112/12/1）建構初步篩檢；最後仍以申請時最新健保公告、審查規範及藥品許可證為準。</p><div class="card"><div class="table-wrap"><table><tr><th>藥品</th><th>台灣核准／可查狀態</th><th>健保 6.2.7</th></tr><tr><td>Nintedanib（Ofev）</td><td>IPF、SSc-ILD、慢性 PF-ILD</td><td>IPF（6.2.7-1）、SSc-ILD（6.2.7-2）、PF-ILD（6.2.7-3），均需事前審查</td></tr><tr><td>Pirfenidone（Pirespa）</td><td>IPF</td><td>僅 IPF（6.2.7-1）；不得與 nintedanib 併用</td></tr><tr><td>Nerandomilast（Jascayd）</td><td>美國核准 IPF + PPF；<b>台灣許可證本版未確證</b></td><td>未列於 6.2.7；不可判定可申請</td></tr><tr><td>Treprostinil（吸入）</td><td>IPF 第三期陽性不代表台灣 IPF 適應症</td><td>IPF 給付未確認</td></tr></table></div><div class="notice">請勿將「TFDA 核准」、「有健保碼」與「此病人符合健保事前審查」視為同義。</div></div><div class="card"><h3>健保 6.2.7 初次申請檢核</h3><div class="grid"><div><label>申請類型</label><select id="nhitype" onchange="nhiToggle()"><option value="ipf">IPF（nintedanib／pirfenidone）</option><option value="ssc">SSc-ILD（nintedanib）</option><option value="pf">PF-ILD 非 IPF（nintedanib）</option></select><label>FVC % predicted</label><input type="number" id="nhifvc" value="65"><label>DLCO % predicted</label><input type="number" id="nhidlco" value="49"><label class="check"><input type="checkbox" id="nhihrct" checked>已備 HRCT 影像（及報告）</label><label class="check"><input type="checkbox" id="nhispec" checked><span data-nhi="ipf">專科醫師確診 IPF</span><span data-nhi="ssc">胸腔內科及風濕免疫科確診 SSc-ILD</span><span data-nhi="pf">胸腔或風濕免疫專科確認符合 PF-ILD 進展定義</span></label><label class="check"><input type="checkbox" id="nhisym" checked>病歷清楚記載呼吸困難、喘或咳嗽等症狀</label></div><div><label class="check" data-nhi="ipf"><input type="checkbox" id="nhicombo">計畫與另一抗纖維化藥併用</label><label class="check" data-nhi="ssc"><input type="checkbox" id="nhirheum">風濕免疫專科確診全身性硬化症</label><label class="check" data-nhi="ssc pf"><input type="checkbox" id="nhifib">HRCT 證實纖維化 ≥10% 肺野</label><label class="check" data-nhi="ssc"><input type="checkbox" id="nhiisfail">CYC／AZA／MMF 6 個月最高可耐受劑量後治療失敗</label><label class="check" data-nhi="pf"><input type="checkbox" id="nhipft">一年內 FVC 絕對降 ≥5% 或 DLCO 絕對降 ≥10%</label><label class="check" data-nhi="pf"><input type="checkbox" id="nhieither">同時有症狀惡化或 HRCT 纖維化增加</label><p class="hint" data-nhi="ipf">IPF：FVC 50–80%；>80% 須明顯症狀。條文未設 DLCO 門檻。</p><p class="hint" data-nhi="ssc">SSc-ILD：FVC ≥40%、DLCO 30–89%。</p><p class="hint" data-nhi="pf">PF-ILD：FVC 45–80%、DLCO 30–80%。</p></div></div><button class="btn" onclick="evalNHI()">核對初次申請條件</button><div id="nhiout" class="result" aria-live="polite"></div></div><div class="card"><h3>續用／停藥規則（6.2.7）</h3><div class="grid"><div><label>給付類別</label><select id="rntype" onchange="rnToggle()"><option value="ipf">IPF</option><option value="ssc">SSc-ILD</option><option value="pf">PF-ILD</option></select><label data-rn="ssc pf">已持續用藥週數</label><input data-rn="ssc pf" type="number" id="rnweeks" value="60" min="0"></div><div><label data-rn="ipf pf"><span data-rn="ipf">最近一次申請時</span><span data-rn="pf">一年前</span> FVC % predicted</label><input data-rn="ipf pf" type="number" id="rnprev" value="66"><label data-rn="ipf pf">本次 FVC % predicted</label><input data-rn="ipf pf" type="number" id="rnnow" value="55"><label data-rn="ssc">FVC 年下降（mL）</label><input data-rn="ssc" type="number" id="rnml" value="150"></div></div><button class="btn" onclick="evalRenew()">判讀續用／停藥</button><div id="rnout" class="result" aria-live="polite"></div><p class="hint">IPF 停藥條件無最短用藥期；SSc-ILD 與 PF-ILD 於持續使用 52 週後才適用。IPF 緩衝期內得申請不同機轉藥物，PF-ILD 緩衝期僅可續用。</p></div></section>
+<section class="tab" id="cases"><h2>11 例示範病例</h2><p class="lead">基礎 8 例（IPF、RA、SSc、PPF、HP、anti-MDA5、ESRD、健保）＋高難度 3 例（健保緩衝期轉藥、SSc 腎危象、HP 合併肝硬化）。每例可展開解析，並一鍵帶入治療計畫或健保核對；輸出由引擎即時計算。病例為合成案例。</p><div class="grid"><div id="caseList"></div><div id="caseContent" class="card"></div></div></section>
+<section class="tab" id="quiz"><h2>25 題進階臨床測驗</h2><p class="lead">25 題單選（第 21–25 題為高難度），含臨床情境、HRCT、PPF 判讀、抗纖維化劑量安全、CTD-ILD 與台灣健保；逐題回饋解析與總分。</p><div class="card"><div class="quiz-head"><b id="qcount">第 1 / 25 題</b><span id="qscore">已答對 0 題</span></div><div class="progress"><div id="qprog" style="width:5%"></div></div><h3 id="qtext"></h3><div id="qchoices" class="choices"></div><div class="actions"><button class="btn" onclick="submitQuiz()" id="qsubmit">提交答案</button><button class="btn secondary" onclick="nextQuiz()" id="qnext" disabled>下一題</button><button class="btn secondary" onclick="resetQuiz()">重新測驗</button></div><div id="qexplain" class="result" aria-live="polite"></div></div></section>
 <section class="tab" id="mind"><h2>互動心智圖</h2><p class="lead">所有節點均可獨立展開／收合，手機也可使用。</p><div class="card mind"><div class="actions"><button class="btn secondary" onclick="document.querySelectorAll('#mind details').forEach(d=>d.open=true)">全部展開</button><button class="btn secondary" onclick="document.querySelectorAll('#mind details').forEach(d=>d.open=false)">全部收合</button></div><details open><summary>🫁 肺纖維化總分類</summary><div><ul><li><details><summary>IPF — 特發性肺纖維化</summary><div>病因排除 → HRCT UIP/probable UIP → MDD → 抗纖維化治療 → PFT/安全性監測</div></details></li><li><details><summary>非 IPF ILD</summary><div>CTD（SSc、RA、IIM、SLE、SjD、MCTD）、HP、藥物、職業暴露、其他；找可治療病因，再評估 PPF。</div></details></li><li><details><summary>PPF — 進展表型</summary><div>非 IPF + 已纖維化 + 一年內 ≥2/3（症狀、生理、HRCT）+ 排除其他原因；不能把 FVC 和 DLCO 當作兩類。</div></details></li></ul></div></details><details open><summary>🔬 診斷工具</summary><div><ul><li>HRCT：UIP / probable UIP / indeterminate / alternative</li><li>PFT：FVC、Hb 校正 DLCO、6MWT、運動血氧</li><li>血清學：ANA、RF、anti-CCP、ENA、肌炎抗體（視臨床）</li><li>MDD：臨床、影像、風濕科、必要時病理</li></ul></div></details><details><summary>💊 藥物機轉</summary><div><ul><li>Nintedanib → VEGFR/FGFR/PDGFR kinase 抑制</li><li>Pirfenidone → TGF-β 等促纖維化途徑調節</li><li>Nerandomilast → PDE4B 抑制 → ↑ cAMP</li><li>Treprostinil → IP receptor → ↑ cAMP</li><li>CTD 活動性 → MMF、Rituximab、Tocilizumab 等依疾病選用</li></ul></div></details><details><summary>🧭 症狀到處方的診療決策</summary><div><ul>
 <li><details><summary>1. 症狀與急性警示</summary><div>乾咳／呼吸困難／Velcro crackles → SpO₂／運動血氧；快速惡化應排除感染、AE-ILD、PE、心衰。</div></details></li>
 <li><details><summary>2. 病因與 HRCT</summary><div>暴露／藥物／自體免疫 → HRCT UIP、probable UIP、NSIP、alternative → MDD 確診。</div></details></li>
 <li><details><summary>3. PPF 與重症風險</summary><div>非 IPF ＋纖維化，一年內症狀、生理、影像 ≥2/3，需排除其他原因；FVC/DLCO 下降同屬生理構面。</div></details></li>
 <li><details><summary>4. 治療選擇</summary><div>IPF：抗纖維化；CTD-ILD：針對發炎與病因治療 ± 抗纖維化；RP-ILD：急性住院處置；查證 TFDA／NHI。</div></details></li>
-<li><details><summary>5. 副作用、監測與預後</summary><div>肝酵素、腹瀉、體重、出血與交互作用；每 3–6 個月肺功能；運動血氧、氧療、肺復健與肺移植評估。預後依 FVC/DLCO、進展速度、急性惡化、氧氣需求及共病，不能由單一指標推算壽命。</div></details></li>
+<li><details><summary>5. 治療計畫設計</summary><div>急性處置 → 病因／免疫治療 → 逐一評估 nintedanib、pirfenidone、nerandomilast（適應症、肝腎門檻、交互作用、懷孕）→ 氧療、復健、疫苗、移植轉介 → 監測時程 → 失敗與升級（健保緩衝期、換藥、移植）。</div></details></li>
+<li><details><summary>6. 副作用、監測與預後</summary><div>肝酵素、腹瀉、體重、出血與交互作用；每 3–6 個月肺功能；運動血氧、氧療、肺復健與肺移植評估。預後依 FVC/DLCO、進展速度、急性惡化、氧氣需求及共病，不能由單一指標推算壽命。</div></details></li>
 </ul></div></details><details><summary>🇹🇼 台灣可近性與追蹤</summary><div>TFDA 適應症 ≠ 健保給付；Nintedanib、Pirfenidone 核對 6.2.7；新藥核准狀態須動態查證；追蹤 FVC、DLCO、肝功能、體重與耐受性，及時評估氧療與移植。</div></details></div></section>
-<section class="tab" id="sources"><h2>參考資料與版本管理</h2><div class="card source"><p><b>最後臨床資料核對：</b>2026-11-09。新增藥品或健保規範變更時應重新檢索原始公告。</p><ol><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9851481/">ATS/ERS/JRS/ALAT 2022 — IPF and PPF</a></li><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824641/">ERS/EULAR 2025/2026 — CTD-ILD guidelines</a></li><li><a target="_blank" rel="noopener" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218764s001lbl.pdf">FDA Jascayd 2026 prescribing information</a></li><li><a target="_blank" rel="noopener" href="https://info.nhi.gov.tw/api/INAE3000/INAE3000S01/getPDF?DurgFileName=6.2.7._20231201.pdf">台灣健保 6.2.7 給付條文（2023-12-01 歷史版本）</a></li><li><a target="_blank" rel="noopener" href="https://www.nhi.gov.tw/ch/cp-13108-67ddf-2508-1.html">健保署最新藥品給付規定整份下載（2026-10 更新公告）</a></li><li><a target="_blank" rel="noopener" href="https://www.tspccm.org.tw/dir/documentBrowse">台灣胸腔暨重症加護醫學會：IPF/PPF 共識</a></li><li><a target="_blank" rel="noopener" href="https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no197/%E8%82%BA%E7%BA%96%E7%B6%AD%E5%8C%96%E8%97%A5%E7%89%A9%E6%B2%BB%E7%99%82%E7%B0%A1%E4%BB%8B.pdf">臺大醫院 IPF 藥品比較（台灣許可適應症）</a></li><li><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=FIBRONEER+nerandomilast+2025">FIBRONEER IPF/ILD 第三期文獻</a></li><li><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=TETON-1+treprostinil+IPF+2026">TETON-1 第三期文獻</a></li></ol><div class="notice">本工具供醫療專業人員教育、共同決策及初步臨床判斷，不取代專科 MDD、正式影像報告、醫囑、TFDA 最新仿單或健保事前審查。資料只在瀏覽器內運算，未設定外部後端；請勿輸入可識別病人資料。</div></div></section>
-<div class="footer">Pulmonary Fibrosis Navigator · static GitHub Pages edition · version 1.0 · 2026-11-09</div></main><script>
+<section class="tab" id="sources"><h2>參考資料與版本管理</h2><div class="card source"><p><b>最後臨床資料核對：</b>2026-11-09。新增藥品或健保規範變更時應重新檢索原始公告。</p><ol><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9851481/">ATS/ERS/JRS/ALAT 2022 — IPF and PPF</a></li><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824641/">ERS/EULAR 2025/2026 — CTD-ILD guidelines</a></li><li><a target="_blank" rel="noopener" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218764s001lbl.pdf">FDA Jascayd prescribing information（Revised 02/2026；劑量、CYP3A、pirfenidone、肝腎功能已於 2026-11-09 核對原文）</a></li><li><a target="_blank" rel="noopener" href="https://info.nhi.gov.tw/api/INAE3000/INAE3000S01/getPDF?DurgFileName=6.2.7._20231201.pdf">台灣健保 6.2.7 給付條文（最後修訂 112/12/1；IPF、SSc-ILD、PF-ILD 初次申請與停藥條件已於 2026-11-09 核對原文）</a></li><li><a target="_blank" rel="noopener" href="https://www.nhi.gov.tw/ch/cp-13108-67ddf-2508-1.html">健保署最新藥品給付規定整份下載（2026-10 更新公告）</a></li><li><a target="_blank" rel="noopener" href="https://www.tspccm.org.tw/dir/documentBrowse">台灣胸腔暨重症加護醫學會：IPF/PPF 共識</a></li><li><a target="_blank" rel="noopener" href="https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no197/%E8%82%BA%E7%BA%96%E7%B6%AD%E5%8C%96%E8%97%A5%E7%89%A9%E6%B2%BB%E7%99%82%E7%B0%A1%E4%BB%8B.pdf">臺大醫院 IPF 藥品比較（台灣許可適應症）</a></li><li><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=FIBRONEER+nerandomilast+2025">FIBRONEER IPF/ILD 第三期文獻</a></li><li><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=TETON-1+treprostinil+IPF+2026">TETON-1 第三期文獻</a></li></ol><div class="notice">本工具供醫療專業人員教育、共同決策及初步臨床判斷，不取代專科 MDD、正式影像報告、醫囑、TFDA 最新仿單或健保事前審查。資料只在瀏覽器內運算，未設定外部後端；請勿輸入可識別病人資料。</div></div></section>
+<div class="footer">Pulmonary Fibrosis Navigator · static GitHub Pages edition · version 1.1 · 2026-11-09</div></main><script>
 
+/*ENGINE-START*/
+const PFE=(function(){
+ const DIS={ipf:'IPF',ss:'SSc-ILD',ra:'RA-ILD',iim:'IIM-ILD',otherctd:'其他 CTD-ILD',hp:'纖維化 HP',other:'其他非 IPF 纖維化 ILD',undetermined:'診斷未定'};
+ const STATUS={first:'建議優先討論',continue:'續用',switch:'考慮轉換',option:'可選',reduced:'需減量',caution:'可用但需謹慎',offlabel:'仿單外・專家討論',foreign:'美國核准・台灣未確認',defer:'穩定後再評估',avoid:'避免／不建議',na:'不適用'};
+ function num(x){if(x===null||x===undefined)return null;if(typeof x==='string'&&x.trim()==='')return null;const n=Number(x);return Number.isFinite(n)?n:null}
+ function r1(x){return Math.round(x*10)/10}
+ /* ATS/ERS/JRS/ALAT 2022 PPF：症狀、生理（FVC ≥5 pp 或 DLCO ≥10 pp，同屬一類）、影像，≥2/3 */
+ function ppf(o){
+  const f0=num(o.f0),f1=num(o.f1),d0=num(o.d0),d1=num(o.d1);
+  const fd=f0!==null&&f1!==null?r1(f0-f1):null,dd=d0!==null&&d1!==null?r1(d0-d1):null;
+  const phys=(fd!==null&&fd>=5)||(dd!==null&&dd>=10);
+  return {fd:fd,dd:dd,phys:phys,count:(phys?1:0)+(o.sym?1:0)+(o.radio?1:0)};
+ }
+ /* 健保 6.2.7（條文最後修訂 112/12/1）初次申請 */
+ function nhi(o){
+  const f=num(o.fvc),d=num(o.dlco),r=[],t=o.type;
+  if(f===null||d===null||f<0||f>150||d<0||d>150)return {ok:false,invalid:true,reasons:['請輸入 0–150 的有效 FVC、DLCO。'],renew:''};
+  if(!o.hrct)r.push(t==='ipf'?'缺 HRCT 影像':'缺 HRCT 影像及報告');
+  if(t==='ipf'){
+   if(!o.spec)r.push('缺專科醫師確診 IPF 紀錄');
+   if(f<50)r.push('IPF 首次申請 FVC 須 ≥50%（50–80%，或 >80% 且有明顯症狀）');
+   if(f>80&&!o.sym)r.push('FVC >80%：病歷須清楚記載呼吸困難、喘或咳嗽等明顯症狀');
+   if(o.combo)r.push('Nintedanib 與 pirfenidone 不得同時併用');
+  }else if(t==='ssc'){
+   if(!o.rheum)r.push('須由免疫風濕專科確診全身性硬化症');
+   if(!o.fib10)r.push('HRCT 須經胸腔內科及放射科證實纖維化 ≥10% 肺野');
+   if(!o.spec)r.push('須經胸腔內科及免疫風濕專科確診 SSc-ILD');
+   if(f<40)r.push('SSc-ILD FVC 須 ≥40%');
+   if(d<30||d>89)r.push('SSc-ILD DLCO 須為預估值 30–89%');
+   if(!o.sym)r.push('病歷須記載呼吸困難、喘或咳嗽等症狀');
+   if(!o.isfail)r.push('須先使用 CYC、AZA 或 MMF 6 個月最高可耐受劑量後治療失敗');
+  }else{
+   if(!o.fib10)r.push('HRCT 須證實纖維化 ≥10% 肺野');
+   if(!o.spec)r.push('須由胸腔或風濕免疫專科確認 PF-ILD 進展定義');
+   if(!o.pft)r.push('須有一年內 FVC 絕對值降低 ≥5% 或 DLCO 絕對值降低 ≥10%');
+   if(!o.either)r.push('肺功能惡化須伴隨呼吸症狀惡化或 HRCT 纖維化增加');
+   if(f<45||f>80)r.push('PF-ILD 起始 FVC 須為 45–80%');
+   if(d<30||d>80)r.push('PF-ILD 起始 DLCO 須為 30–80%');
+   if(!o.sym)r.push('病歷須記載相關臨床症狀');
+  }
+  const renew=t==='ipf'?'事前審查；每 24 週檢送評估資料再申請。':'限 nintedanib；事前審查；每 26 週檢送評估資料再申請。';
+  return {ok:r.length===0,reasons:r,renew:renew};
+ }
+ /* 健保 6.2.7 續用／停藥規則 */
+ function renew(o){
+  const t=o.type,prev=num(o.prev),now=num(o.now),wk=num(o.weeks),ml=num(o.ml);
+  if(t==='ssc'){
+   if(wk===null||ml===null)return {level:'notice',text:'SSc-ILD 請輸入用藥週數與 FVC 年下降毫升數。'};
+   if(wk<52)return {level:'good',text:'未滿 52 週：停藥條件尚不適用；每 26 週檢送肺功能評估再申請。'};
+   if(ml>100)return {level:'danger',text:'用藥 ≥52 週且 FVC 年下降 >100 mL：得續用並觀察 12 週；再測 FVC 未改善應停藥。'};
+   return {level:'good',text:'FVC 年下降 ≤100 mL：未達停藥條件，每 26 週再申請。'};
+  }
+  if(prev===null||now===null)return {level:'notice',text:'請輸入上次申請時與本次 FVC % predicted。'};
+  const drop=r1(prev-now);
+  if(t==='pf'&&(wk===null||wk<52))return {level:'good',text:'PF-ILD 停藥條件於持續使用 52 週後才適用（本次下降 '+drop+' pp）；每 26 週再申請。'};
+  if(drop>=10)return {level:'danger',text:'FVC 較'+(t==='ipf'?'最近一次申請時':'前一年')+'絕對下降 '+drop+' pp（≥10）：進入 12 週緩衝期，'+(t==='ipf'?'可先續用或申請不同機轉藥物 12 週':'可先續用')+'；緩衝期後再測仍較緩衝期前降低，應停藥。'};
+  return {level:'good',text:'FVC 絕對下降 '+drop+' pp（<10）：未達停藥條件；'+(t==='ipf'?'每 24 週':'每 26 週')+'再申請。'};
+ }
+ function plan(x){
+  const o=Object.assign({dis:'undetermined',ppf:'uncertain',act:'no',mdd:true,pattern:'other',liver:'normal',current:'none',intol:'none'},x||{});
+  const fvc=num(o.fvc),dl=num(o.dlco),eg=num(o.egfr),sp=num(o.spo2),ex=num(o.exspo2),age=num(o.age);
+  const isIPF=o.dis==='ipf',undet=o.dis==='undetermined',nonIPF=!isIPF&&!undet;
+  const ipfOK=isIPF&&!!o.mdd,ppfYes=nonIPF&&o.ppf==='yes',ctd=['ss','ra','iim','otherctd'].indexOf(o.dis)>=0;
+  const urgent=o.act==='urgent'||!!o.infect||(sp!==null&&sp<90)||!!o.src;
+  const alerts=[],acute=[],disease=[],support=[],escalate=[],missing=[];
+  /* ---- 警示 ---- */
+  if(undet)alerts.push('診斷未確立：先完成暴露／藥物／自體免疫評估、高品質 HRCT 與 MDD；本計畫不提供藥物劑量。');
+  if(isIPF&&!o.mdd)alerts.push('IPF 尚未經 MDD 確認：先排除次發性 UIP（CTD、HP、藥物、職業），再啟動抗纖維化藥。');
+  if(nonIPF&&o.ppf==='uncertain')missing.push('PPF 未確認：補齊一年內 FVC、Hb 校正 DLCO、症狀與 HRCT 比較。');
+  if(fvc===null||dl===null)missing.push('缺 FVC 或 DLCO：無法評估嚴重度、健保範圍與移植轉介。');
+  if(eg===null)missing.push('缺 eGFR：pirfenidone、nerandomilast 腎功能門檻無法判斷。');
+  if(o.liver==='unknown')missing.push('未確認肝功能／Child-Pugh：起始前查 AST、ALT、bilirubin。');
+  if(o.src)alerts.push('疑似硬皮症腎危象（新發高血壓、肌酸酐上升、微血管病變溶血）：屬急症，立即 ACE 抑制劑（如 captopril）滴定控壓、住院；降低類固醇。');
+  if(o.dis==='ss'&&o.steroidHigh)alerts.push('SSc 使用 prednisolone ≥15 mg/日：硬皮症腎危象風險上升，應改以類固醇節省方案並每次量血壓、追蹤肌酸酐。');
+  if(isIPF&&o.act==='yes')alerts.push('IPF 卻見活動性發炎／可逆 GGO：重新 MDD 檢視是否為 CTD、HP 或其他診斷；IPF 不使用長期類固醇或 azathioprine（PANTHER 傷害）。');
+  /* ---- 急性 ---- */
+  if(urgent){
+   acute.push('急診／住院評估：CBC、CRP、procalcitonin、血液與呼吸道病原（含病毒 PCR；免疫抑制者加 PJP、CMV）、BNP、心臟超音波、CTPA 排除肺栓塞。');
+   acute.push('氧療目標 SpO₂ 約 88–92%，必要時 HFNC；及早與病人及家屬討論插管與治療目標（AE-ILD 機械通氣預後差）。');
+   if(isIPF)acute.push('AE-IPF：以支持療法為主；高劑量類固醇屬既往指引弱建議、證據低；避免加 IV cyclophosphamide（EXAFIP 試驗死亡率較高）。已用抗纖維化藥一般可續用。');
+   if(o.dis==='iim')acute.push('IIM／anti-MDA5 快速進展：跨科及早合併治療，如 methylprednisolone 脈衝 500–1000 mg×3 日 → prednisolone 約 1 mg/kg/日，加 tacrolimus（目標谷濃度約 5–10 ng/mL）及 IV cyclophosphamide；難治者討論 JAK 抑制劑、血漿置換、IVIG。加 PJP 預防。');
+   if(ctd&&o.dis!=='iim')acute.push('CTD-ILD 急性惡化：排除感染後由風濕免疫科決定脈衝類固醇或加強免疫抑制（SSc 例外：避免高劑量類固醇）。');
+   if(o.dis==='hp')acute.push('HP 急性加重：立即脫離抗原，排除感染後評估全身性類固醇。');
+  }
+  /* ---- 病因／免疫治療 ---- */
+  if(isIPF)disease.push('IPF 不使用免疫抑制作為維持治療；不建議 prednisolone + azathioprine + NAC。');
+  if(o.dis==='ss'){
+   disease.push('<b>MMF（第一線）：</b>500 mg BID 起，每 1–2 週每日增 500 mg，目標 1.5 g BID（SLS-II）；腸胃不耐可改 mycophenolic acid。');
+   disease.push('<b>替代／加強：</b>IV cyclophosphamide 500–750 mg/m² 每 4 週 ×6；rituximab 1 g ×2（間隔 2 週，RECITAL 375 mg/m² ×4 亦可）；早期瀰漫型且 CRP 升高可考慮 tocilizumab 162 mg SC 每週（focuSSced）。');
+   disease.push('<b>Nintedanib：</b>SENSCIS 顯示可減緩 SSc-ILD FVC 下降，約半數病人背景使用 MMF；'+(o.mmf&&ppfYes?'本例已用 MMF 仍進展，建議合併 nintedanib 或改用 rituximab／CYC。':'進展或 MMF 反應不足時合併。'));
+   disease.push('避免 prednisolone ≥15 mg/日；每次回診量血壓，追蹤肌酸酐。');
+  }
+  if(o.dis==='ra'){
+   disease.push('<b>RA-ILD：</b>與風濕科共同處理肺與關節活動度；可選 MMF（目標 1–1.5 g BID）、rituximab（1 g ×2）或 azathioprine；短期類固醇僅限活動性發炎。');
+   if(o.pattern==='uip')disease.push('UIP 型 RA-ILD 以纖維化為主，免疫抑制效益有限；進展時以 nintedanib（INBUILD）為主，pirfenidone 屬仿單外（TRAIL1 第二期）。');
+  }
+  if(o.dis==='iim'&&!urgent)disease.push('<b>IIM-ILD：</b>prednisolone 0.5–1 mg/kg/日漸減，及早合併類固醇節省劑（MMF、azathioprine、tacrolimus／cyclosporine，難治加 rituximab 或 CYC）；anti-MDA5、anti-synthetase 依抗體預後分層。');
+  if(o.dis==='otherctd')disease.push('<b>SLE／SjD／MCTD-ILD：</b>依原病活動性選 MMF、azathioprine、rituximab；活動性發炎可短期類固醇，纖維化進展再加 nintedanib。');
+  if(o.dis==='hp'){
+   disease.push('<b>抗原脫離為核心：</b>逐項查鳥類／羽毛寢具、黴菌（浴室、冷氣、加濕器）、熱水池、職業粉塵；必要時居家訪視。持續暴露者預後差。');
+   if(o.act!=='no')disease.push('<b>活動性發炎（GGO、mosaic、BAL 淋巴球增加）：</b>prednisolone 約 0.5 mg/kg/日 4–8 週後漸減，或以 MMF／azathioprine 作類固醇節省（觀察性證據）。');
+  }
+  if(o.dis==='other')disease.push('針對已知病因：停用致病藥物、脫離職業暴露，再依 PPF 決定抗纖維化藥。');
+  if(ctd||o.dis==='hp'||o.immune||o.mmf){
+   disease.push('免疫抑制前：HBsAg／anti-HBc／anti-HBs、IGRA 或胸片排除潛伏結核、疫苗（rituximab 前完成）；prednisolone ≥20 mg/日持續 ≥4 週併其他免疫抑制劑時考慮 TMP-SMX 預防 PJP；長期類固醇加骨質保護與血糖監測。');
+   if(o.preg)disease.push('MMF、CYC 具致畸性：須有效避孕；備孕應先換藥（如 azathioprine）並與風濕／婦產科共同規劃。');
+  }
+  /* ---- 抗纖維化藥 ---- */
+  const indic=ipfOK||ppfYes||o.dis==='ss';
+  function mk(key,name){return {key:key,name:name,status:'option',dose:'',notes:[],c:0}}
+  const N=mk('nint','Nintedanib'),P=mk('pir','Pirfenidone'),R=mk('ner','Nerandomilast');
+  /* Nintedanib */
+  if(!indic){N.status='na';N.notes.push(undet?'診斷未確立。':isIPF?'未完成 MDD。':'非 IPF 且未符合 PPF：先追蹤 3–6 個月。')}
+  else{
+   N.dose=o.liver==='a'?'100 mg PO BID 隨餐（Child-Pugh A 減量）':'150 mg PO BID 隨餐，間隔約 12 小時；不耐受可減為 100 mg BID';
+   if(o.liver==='a'){N.status='reduced';N.c++}
+   if(o.liver==='b'||o.liver==='c'){N.status='avoid';N.notes.push('中重度肝功能不全（Child-Pugh B/C）不建議使用。')}
+   if(o.intol==='nint'){N.status='avoid';N.notes.push('既往不耐受 nintedanib。')}
+   if(o.preg){N.status='avoid';N.notes.push('可能造成胎兒傷害：懷孕禁用，育齡女性須避孕。')}
+   if(o.bleed){N.c++;N.notes.push('出血風險／抗凝：VEGFR 抑制增加出血風險，關鍵試驗排除全劑量抗凝者；須權衡並教育出血徵象。')}
+   if(eg!==null&&eg<30){N.c++;N.notes.push('eGFR <30：重度腎功能不全未經研究。')}
+   if(o.gi){N.c++;N.notes.push('腹瀉最常見：備 loperamide、補水；必要時暫停或減為 100 mg BID。')}
+   N.notes.push('ALT/AST >3×ULN：暫停或減為 100 mg BID；>5×ULN，或 >3×ULN 合併 bilirubin >2×ULN／肝炎症狀：停藥。');
+   if(nonIPF&&o.dis!=='ss')N.notes.push('INBUILD：非 IPF 進行性纖維化 ILD 的證據來源；台灣 PF-ILD 給付另依 6.2.7-3。');
+   if(o.dis==='ss')N.notes.push('台灣 SSc-ILD 給付需 CYC／AZA／MMF 6 個月最高耐受劑量失敗（6.2.7-2）。');
+  }
+  /* Pirfenidone */
+  if(!ipfOK){
+   if(o.dis==='ra'&&o.pattern==='uip'&&ppfYes&&o.liver!=='c'&&!(eg!==null&&eg<15)){P.status='offlabel';P.dose='同 IPF 調量（仿單外）';P.notes.push('僅 IPF 為許可適應症；RA-ILD UIP 型可由專家討論（第二期證據）。')}
+   else{P.status='na';P.notes.push(isIPF?'未完成 MDD。':'許可適應症僅 IPF；非 IPF ILD 屬仿單外，健保不給付。')}
+  }else{
+   P.dose='Pirespa 200 mg：200 mg TID 飯後起始，依耐受性每次增量 200 mg（常見間隔 2 週），目標 600 mg TID（1800 mg/日）；以台灣仿單為準。267／801 mg 規格（267 mg TID → 534 mg TID → 801 mg TID）不可直接換算套用。';
+   if(o.liver==='c'){P.status='avoid';P.notes.push('Child-Pugh C 不建議使用。')}
+   else if(o.liver==='b'||o.liver==='a'){P.c++;P.notes.push('Child-Pugh A/B：謹慎使用並密切追蹤肝功能。')}
+   if(eg!==null&&eg<15){P.status='avoid';P.notes.push('ESRD／透析：不建議使用。')}
+   else if(eg!==null&&eg<30){P.c++;P.notes.push('重度腎功能不全：謹慎使用。')}
+   if(o.cyp1a2){P.status='avoid';P.notes.push('強效 CYP1A2 抑制劑（如 fluvoxamine）：須先停用或換藥；ciprofloxacin 等中效抑制劑須減量。')}
+   if(o.intol==='pir'){P.status='avoid';P.notes.push('既往不耐受 pirfenidone。')}
+   if(o.smoker)P.notes.push('吸菸誘導 CYP1A2、降低藥物暴露：同時是戒菸理由。');
+   if(o.gi){P.c++;P.notes.push('噁心、食慾差、體重下降：隨餐、放慢調量。')}
+   if(o.preg){P.c++;P.notes.push('懷孕資料不足：與病人討論風險。')}
+   P.notes.push('光敏感／皮疹：防曬、避免日曬；ALT/AST >3×ULN 減量或暫停，>5×ULN 停藥。');
+  }
+  /* Nerandomilast（美國仿單 02/2026） */
+  if(!ipfOK&&!ppfYes){R.status='na';R.notes.push('美國適應症為 IPF 及 PPF；本例未符合。')}
+  else{
+   R.status='foreign';
+   const withPir=o.current==='pir';
+   R.dose=o.cyp3a?'9 mg PO BID（併用強效 CYP3A 抑制劑）':withPir?'18 mg PO BID；併用 pirfenidone 時不可降為 9 mg BID（暴露下降、9 mg 無療效）':'18 mg PO BID，間隔約 12 小時，可空腹或隨餐；不耐受可降為 9 mg BID';
+   if(o.liver==='c'){R.status='avoid';R.notes.push('Child-Pugh C 不建議使用（A/B 不需調整）。')}
+   else if(o.liver==='b')R.notes.push('Child-Pugh B：美國仿單不需調整劑量。');
+   if(eg!==null&&eg<15){R.status='avoid';R.notes.push('eGFR <15（ESRD）不建議使用。')}
+   else if(eg!==null&&eg<30)R.notes.push('eGFR 15–29：美國仿單不需調整。');
+   if(o.cyp3aInd){R.status='avoid';R.notes.push('中強效 CYP3A 誘導劑（如 rifampicin、carbamazepine）：避免併用。')}
+   if(o.preg){R.status='avoid';R.notes.push('動物試驗胎兒流失增加：懷孕避免使用。')}
+   if(o.depress)R.notes.push('憂鬱相關不良反應（含自殺意念）18 mg 12% vs 安慰劑 10%：既往憂鬱者每次回診評估情緒。');
+   if(o.gi)R.notes.push('腹瀉 42% vs 17%、體重下降：腸胃耐受差者謹慎。');
+   R.notes.push('台灣許可證與健保給付本版未確認，不可視為可常規申請。');
+   if(o.current==='ner'&&R.status==='foreign')R.notes.unshift('目前已在使用：評估耐受與續用。');
+  }
+  /* 選擇優先藥 */
+  const cand=[N,P].filter(function(d){return ['option','reduced','caution'].indexOf(d.status)>=0});
+  cand.forEach(function(d){if(d.status==='option'&&d.c>0)d.status='caution'});
+  const cur=o.current==='nint'?N:o.current==='pir'?P:null;
+  if(cur&&cur.status!=='avoid'&&cur.status!=='na'){
+   if(o.progOnTx){
+    cur.status='switch';
+    const alt=cand.filter(function(d){return d!==cur})[0];
+    if(alt)alt.status='first';
+   }else cur.status='continue';
+  }else if(cand.length){
+   const best=cand.slice().sort(function(a,b){return a.c-b.c||(a.key==='nint'?-1:1)})[0];
+   if(!(o.dis==='ss'&&!ppfYes&&!o.mmf))best.status='first';
+  }
+  if(urgent)[N,P].forEach(function(d){if(d.status==='first')d.status='defer'});
+  const drugs=[N,P,R];
+  const chosen=drugs.filter(function(d){return ['first','continue','defer'].indexOf(d.status)>=0})[0]||null;
+  /* ---- 支持療法 ---- */
+  if(o.smoker)support.push('戒菸（藥物＋行為治療）；同時降低 pirfenidone 交互作用。');
+  support.push('疫苗：每年流感、肺炎鏈球菌、COVID-19；≥60 歲或高風險者 RSV。');
+  support.push('肺復健：運動訓練與呼吸控制，改善 6MWD 與生活品質。');
+  if(sp!==null&&sp<=88)support.push('休息 SpO₂ ≤88%：長期氧療（每日 ≥15 小時）。');
+  if(ex!==null&&ex<=88)support.push('運動 SpO₂ ≤88%：活動時氧氣滴定試驗，討論攜帶式氧氣。');
+  if(o.ph||(dl!==null&&dl<40&&fvc!==null&&fvc>=60))support.push('疑似肺高壓（DLCO 與 FVC 不相稱或臨床懷疑）：心臟超音波、BNP，必要時右心導管；PH-ILD 吸入 treprostinil（INCREASE）於台灣適應症／給付須另查。');
+  support.push('胃食道逆流有症狀才治療；不以制酸劑作為改善 IPF 預後的常規治療。');
+  const txRefer=ipfOK||ppfYes||(fvc!==null&&fvc<80)||(dl!==null&&dl<40)||(sp!==null&&sp<=88)||(ex!==null&&ex<=88);
+  if(txRefer&&!undet)support.push('肺移植轉介（ISHLT 2021：IPF 確診時、FVC <80%、DLCO <40%、需氧或進展即轉介）'+(age!==null&&age>=70?'；≥70 歲由移植中心依共病與體能個別評估':'')+(o.liver==='b'||o.liver==='c'?'；肝硬化通常為單純肺移植禁忌，須移植中心評估':'')+'。');
+  if((fvc!==null&&fvc<50)||(dl!==null&&dl<35)||(sp!==null&&sp<=88)||urgent)support.push('安寧緩和共照：呼吸困難（低劑量嗎啡）、咳嗽、焦慮處理與預立醫療照護諮商。');
+  /* ---- 監測時程 ---- */
+  const tl=[];
+  const base=['FVC、Hb 校正 DLCO、6MWT（含最低 SpO₂）','AST、ALT、bilirubin、CBC、肌酸酐／eGFR、體重'];
+  if(ctd||o.dis==='hp'||o.immune||o.mmf)base.push('HBV、潛伏結核、疫苗狀態');
+  if(o.preg)base.push('懷孕試驗與避孕計畫');
+  tl.push(['第 0 週（起始）',base.join('；')]);
+  const early=[];
+  if(chosen===P)early.push('Pirfenidone 依耐受性逐步調量');
+  if(chosen===N)early.push('Nintedanib 起始劑量即目標劑量，2 週電話追蹤腹瀉');
+  if(o.dis==='ss'||(ctd&&o.mmf))early.push('MMF 調量期每 2 週 CBC');
+  if(early.length)tl.push(['第 2–4 週',early.join('；')]);
+  const lft=[];
+  if(N.status!=='na'&&N.status!=='avoid'&&(chosen===N||N.status==='switch'||N.status==='first'))lft.push('Nintedanib：肝功能每月 ×3 個月，之後每 3 個月');
+  if(P.status!=='na'&&P.status!=='avoid'&&(chosen===P||P.status==='switch'||P.status==='first'))lft.push('Pirfenidone：肝功能每月 ×6 個月，之後每 3 個月');
+  if(ctd||o.mmf||o.immune)lft.push('免疫抑制劑：CBC、肝腎功能每 1–3 個月');
+  if(lft.length)tl.push(['第 1–6 個月',lft.join('；')]);
+  tl.push(['第 3 個月','FVC、DLCO、症狀、體重、副作用；確認服藥順從性與劑量'+(o.dis==='ss'?'；血壓':'')]);
+  tl.push(['第 6 個月','FVC、DLCO、6MWT；'+(isIPF?'健保 IPF 每 24 週再申請':'健保 SSc-ILD／PF-ILD 每 26 週再申請')]);
+  tl.push(['第 12 個月','FVC、DLCO、6MWT、HRCT（臨床或肺功能惡化時）；重新判定進展與健保停藥條件']);
+  /* ---- 失敗／升級 ---- */
+  escalate.push('6–12 個月內 FVC 下降 ≥5 pp 或 DLCO ≥10 pp：先排除感染、肺栓塞、肺高壓、心衰、貧血、服藥不足或減量，再 MDD 判定是否真進展。');
+  if(isIPF)escalate.push('健保 IPF：FVC 較最近一次申請降低 ≥10 pp → 12 週緩衝期，可續用或改申請不同機轉藥物；緩衝期後仍較低則停藥。');
+  else if(o.dis==='ss')escalate.push('健保 SSc-ILD：nintedanib 用 ≥52 週後 FVC 年下降 >100 mL → 觀察 12 週，未改善停藥。');
+  else if(nonIPF)escalate.push('健保 PF-ILD：nintedanib 用 ≥52 週後 FVC 年降 ≥10 pp → 12 週緩衝期，仍降低則停藥。');
+  escalate.push('真進展：換藥（nintedanib ↔ pirfenidone 僅限 IPF）、國外可取得時於背景治療上加 nerandomilast（FIBRONEER 允許背景抗纖維化）、臨床試驗、肺移植列名。');
+  if(ctd)escalate.push('CTD-ILD 進展：檢視免疫抑制是否達目標劑量 ≥6 個月，再換類別（MMF → rituximab／CYC）或加 nintedanib。');
+  /* ---- 摘要 ---- */
+  let summary;
+  if(undet)summary='先確立診斷，暫不啟動藥物。';
+  else if(urgent)summary='急性／高風險情境：先住院排除可逆原因與急性處置，抗纖維化藥新啟動延至穩定後。';
+  else if(chosen)summary=DIS[o.dis]+'：'+(cur&&cur.status==='switch'?'目前 '+cur.name+' 下仍進展 → 轉換為 ':chosen.status==='continue'?'續用 ':'優先討論 ')+chosen.name+'（'+chosen.dose.split('；')[0]+'）'+(ctd?'，並維持病因免疫治療':'')+'。';
+  else if(drugs.some(function(d){return d.status==='switch'}))summary='目前藥物下仍進展：評估轉換或升級。';
+  else if(indic&&R.status==='foreign')summary='台灣可用抗纖維化藥均受限；nerandomilast 依美國仿單可考慮，但台灣許可與給付未確認。';
+  else if(nonIPF&&!ppfYes)summary=DIS[o.dis]+'：以病因治療為主，3–6 個月追蹤 PPF。';
+  else summary='無可安全建議的抗纖維化藥；以支持療法與移植評估為主。';
+  return {dis:o.dis,label:DIS[o.dis],urgent:urgent,summary:summary,alerts:alerts,missing:missing,acute:acute,disease:disease,drugs:drugs.map(function(d){return {key:d.key,name:d.name,status:d.status,statusText:STATUS[d.status],dose:d.dose,notes:d.notes}}),support:support,timeline:tl,escalate:escalate};
+ }
+ return {num:num,ppf:ppf,nhi:nhi,renew:renew,plan:plan,STATUS:STATUS,DIS:DIS};
+})();
+if(typeof module!=='undefined')module.exports=PFE;
+/*ENGINE-END*/
 function wval(id){return document.getElementById(id).value}
 function wchk(id){return document.getElementById(id).checked}
 function wnum(id){var x=wval(id);return x.trim()===''?null:Number(x)}
 function wshow(n){document.querySelectorAll('.wstep').forEach(function(x,i){x.classList.toggle('active',i===n)});document.querySelectorAll('.wtab').forEach(function(x,i){x.classList.toggle('on',i===n)});}
 function wGo(n){wshow(n);if(n===2)wCalculate();if(n===4)wReport();}
-function wStats(){var f0=wnum('wf0'),f1=wnum('wf1'),d0=wnum('wd0'),d1=wnum('wd1');var goodF=f0!==null&&f1!==null&&f0>=0&&f0<=150&&f1>=0&&f1<=150;var goodD=d0!==null&&d1!==null&&d0>=0&&d0<=150&&d1>=0&&d1<=150;var fd=goodF?f0-f1:null,dd=goodD?d0-d1:null;var phys=(fd!==null&&fd>=5)||(dd!==null&&dd>=10);var count=Number(wchk('wworsen'))+Number(phys)+Number(wchk('wctprogress'));var can=wchk('wyear')&&wchk('wexclude')&&wval('wfib')==='yes'&&wval('wcause')!=='unknown'&&wval('wcause')!=='none';return {fd:fd,dd:dd,phys:phys,count:count,ppf:can&&count>=2,can:can};}
+function wIsIPF(){return wval('wcause')==='none'&&(wval('wpattern')==='uip'||wval('wpattern')==='prob')}
+function wStats(){var r=PFE.ppf({f0:wnum('wf0'),f1:wnum('wf1'),d0:wnum('wd0'),d1:wnum('wd1'),sym:wchk('wworsen'),radio:wchk('wctprogress')});var cause=wval('wcause');var can=wchk('wyear')&&wchk('wexclude')&&wval('wfib')==='yes'&&cause!=='unknown'&&!wIsIPF();r.can=can;r.ppf=can&&r.count>=2;return r;}
 function wfmt(v){return v===null?'未取得':v.toFixed(1)}
-function wCalculate(){var p=wStats();document.getElementById('wcalc').innerHTML='<div class="'+(p.ppf?'good':'notice')+'"><b>FVC 下降 '+wfmt(p.fd)+' pp；DLCO 下降 '+wfmt(p.dd)+' pp</b><p>症狀、生理、影像共 '+p.count+'/3 構面。'+(p.ppf?'符合 PPF 初步定義（非 IPF）':'尚未證實符合 PPF；請確認排除原因、時間及資料完整性。')+'</p><p class="hint">FVC 與 DLCO 同屬生理構面，只計一項；資料缺漏不等於正常。</p></div>';}
+function wCalculate(){var p=wStats();var ipf=wIsIPF();document.getElementById('wcalc').innerHTML='<div class="'+(p.ppf?'good':'notice')+'"><b>FVC 下降 '+wfmt(p.fd)+' pp；DLCO 下降 '+wfmt(p.dd)+' pp</b><p>症狀、生理、影像共 '+p.count+'/3 構面。'+(ipf?'目前資料指向 IPF：PPF 定義不適用。':p.ppf?'符合 PPF 初步定義（非 IPF）':'尚未證實符合 PPF；請確認病因、排除原因、時間及資料完整性。')+'</p><p class="hint">FVC 與 DLCO 同屬生理構面，只計一項；資料缺漏不等於正常。</p></div>';}
 function wBullets(xs){return '<ul>'+xs.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
 function wBlock(h,body){return '<div class="card"><h3>'+h+'</h3>'+body+'</div>'}
+var WCAUSE={ssc:'SSc',ra:'RA',iim:'IIM',ctd:'其他 CTD'};
 function wReport(){
- var p=wStats(),fib=wval('wfib'),cause=wval('wcause'),pat=wval('wpattern'),mdd=wval('wmdd')==='yes',eg=wnum('wegfr'),f=wnum('wf1'),d=wnum('wd1'),sp=wnum('wspo'),walk=wnum('wwalk'),liver=wval('wliver'),inf=wval('winfl');
- var urgent=wchk('wrapid')||wchk('winfect')||(sp!==null&&sp<90)||(wval('wser')==='mda5'&&wval('wduration')!=='chronic');
- var type='undetermined',diagnosis='',missing=[],therapy=[],safety=[],follow=[],risk=[];
+ var p=wStats(),fib=wval('wfib'),cause=wval('wcause'),pat=wval('wpattern'),mdd=wval('wmdd')==='yes',f=wnum('wf1'),d=wnum('wd1'),sp=wnum('wspo'),walk=wnum('wwalk');
+ var mda5=wval('wser')==='mda5';
+ var urgent=wchk('wrapid')||wchk('winfect')||(sp!==null&&sp<90)||(mda5&&wval('wduration')!=='chronic');
+ var dis='undetermined',diagnosis='',missing=[],risk=[];
  if(fib!=='yes'){diagnosis='HRCT 纖維化證據尚未確立：不能自動診斷 IPF 或 PPF。';missing.push('完成高品質 HRCT、PFT 和必要的影像專家審閱。');}
  else if(cause==='unknown'){diagnosis='已見纖維化但病因未查明：暫列纖維化 ILD，不能直接診斷 IPF。';missing.push('補齊環境／職業／藥物暴露、自體免疫疾病、家族史及血清學。');}
- else if(cause==='none'&&(pat==='uip'||pat==='prob')){type='ipf';diagnosis=(mdd?'高度支持 IPF，仍須核對 MDD 正式結論。':'疑似 IPF，須完成 MDD 排除次發性 UIP。');}
- else if(cause==='none'){diagnosis='原因未明 ILD：目前影像不足以直接判定 IPF，需 MDD 及進一步鑑別。';}
- else if(cause==='ssc'||cause==='ra'||cause==='iim'||cause==='ctd'){type='ctd';diagnosis='CTD-ILD（'+cause.toUpperCase()+'）候選診斷；'+(p.ppf?'合併 PPF 表型。':'PPF 尚未能確認。');}
- else if(cause==='hp'){type='hp';diagnosis='疑似纖維化型 HP；'+(p.ppf?'符合 PPF 表型。':'PPF 尚未能確認。');}
- else{type='other';diagnosis='已知病因之纖維化 ILD；'+(p.ppf?'符合 PPF 表型。':'PPF 尚未能確認。');}
+ else if(wIsIPF()){dis='ipf';diagnosis=(mdd?'高度支持 IPF，仍須核對 MDD 正式結論。':'疑似 IPF，須完成 MDD 排除次發性 UIP。');}
+ else if(cause==='none'){dis='other';diagnosis='無已知原因但影像非 UIP／probable UIP：屬未分類或特發性非 IPF ILD，需 MDD 鑑別（如 iNSIP）；'+(p.ppf?'符合 PPF 表型。':'PPF 尚未能確認。');}
+ else if(WCAUSE[cause]){dis={ssc:'ss',ra:'ra',iim:'iim',ctd:'otherctd'}[cause];diagnosis='CTD-ILD（'+WCAUSE[cause]+'）候選診斷；'+(p.ppf?'合併 PPF 表型。':'PPF 尚未能確認。');}
+ else if(cause==='hp'){dis='hp';diagnosis='疑似纖維化型 HP；'+(p.ppf?'符合 PPF 表型。':'PPF 尚未能確認。');}
+ else{dis='other';diagnosis='已知病因之纖維化 ILD；'+(p.ppf?'符合 PPF 表型。':'PPF 尚未能確認。');}
+ if(mda5&&dis!=='iim')missing.push('anti-MDA5 陽性／疑似：以 IIM-ILD 處理並警覺快速進展。');
+ if(mda5&&dis!=='undetermined')dis='iim';
  if(!mdd)missing.push('需完成 MDD（胸腔、影像、病理／風濕免疫視情況參與）。');
  if(!wchk('wexclude'))missing.push('惡化原因尚未排除：感染、PE、心衰、肺高壓、貧血或測試變異。');
- if(f===null||d===null)missing.push('缺少最新 FVC 或 Hb 校正 DLCO：預後及進展判讀受限。');
- if(liver==='unknown')missing.push('開始藥物前查 AST、ALT、bilirubin、肝功能分級。');
- if(eg===null)missing.push('缺少 eGFR：須先評估腎功能及透析狀態。');
- if(urgent)safety.push('高風險急性情境：應優先緊急專科／住院評估，排除感染、肺栓塞、AE-ILD、心衰或快速進展 IIM-ILD；不可只處理慢性 PPF。');
- if(wval('wser')==='mda5')safety.push('anti-MDA5 陽性／疑似：需警覺快速進展型 ILD，急速惡化時由專科評估積極合併免疫抑制。');
- if(sp!==null&&sp<90)safety.push('休息 SpO₂ <90%：優先確認低氧、呼吸支持與急性處置需要。');
- if(walk!==null&&walk<=88)safety.push('運動 SpO₂ ≤88%：需評估運動性低氧與活動時氧療。');
- if(type==='ipf'&&mdd&&!urgent){
- therapy.push('<b>可優先討論 Nintedanib：</b>成人典型 150 mg PO BID，與食物併服；不耐受時依醫師評估暫停或減為 100 mg BID。Child-Pugh A 需減為 100 mg BID；Child-Pugh B/C 不建議使用。');
- therapy.push('<b>替代選項 Pirfenidone：</b>依台灣實際核准劑型及仿單分階段調量、隨餐服用。不同國家 200、267 或 801 mg 規格不可直接互換。');
- therapy.push('<b>美國新核准 Nerandomilast：</b>18 mg PO BID；不耐受可在特定條件下減為 9 mg BID，合併 Pirfenidone 時不可直接減至 9 mg BID。台灣 TFDA 核准／健保給付未於本版確證，不能視為本地可常規處方。');
- }else if(type==='ipf'){therapy.push('疑似 IPF 但缺完整 MDD 或有急性警訊：先確認診斷及急性狀況，再由專科選擇抗纖維化治療。');}
- if(type==='ctd'){therapy.push('<b>針對 CTD 病因：</b>依活動度和器官表現考慮 MMF、Rituximab、Cyclophosphamide、Tocilizumab 等，由專科個別選擇；不可直接視為對所有 CTD-ILD 相同。');if(cause==='ssc')therapy.push('<b>SSc-ILD MMF 劑量範例：</b>常由 500 mg PO BID 漸增，常見目標 1–1.5 g BID；須監測 CBC、感染、肝腎功能及懷孕禁忌。避免不必要的高劑量類固醇及硬皮症腎危象。');if(p.ppf)therapy.push('對持續進展之 CTD-ILD 可依病型及證據討論 Nintedanib 150 mg BID，SSc-ILD 可討論與 MMF 合併；須符合藥品適應症與安全性。');}
- if(type==='hp'){therapy.push('HP：優先辨認並去除鳥類、黴菌等抗原，活動性發炎再評估免疫調節；不能一律當作 IPF。');if(p.ppf)therapy.push('對符合 PPF 且仍進展的 HP，可考慮 Nintedanib 150 mg BID。');}
- if(type==='other'&&p.ppf)therapy.push('原病因已充分治療仍進展者，可討論 Nintedanib 150 mg BID，並核對台灣給付資格。');
- if(!therapy.length)therapy.push('目前證據不足以選擇安全的藥物與劑量，應先建立正式診斷、補齊檢查及完成 MDD。');
- if(liver==='bc')safety.push('Child-Pugh B/C 或顯著肝功能損傷：Nintedanib 不建議使用；先核對所有候選藥物個別仿單。');
- if(liver==='a')safety.push('Child-Pugh A：Nintedanib 美國仿單減量為 100 mg BID，不能套用 150 mg BID。');
- if(eg!==null&&eg<15)safety.push('eGFR <15 或 ESRD：Nerandomilast 美國標示不建議使用，Pirfenidone 於 ESRD／透析不建議；Nintedanib 重度腎障礙資料不足。');
- else if(eg!==null&&eg<30)safety.push('eGFR <30：需核對適應症、藥動學與安全監測，避免自行套用一般劑量。');
- if(wchk('wbleed'))safety.push('抗凝血或出血風險：Nintedanib 抑制 VEGFR 相關出血事件需權衡。');
- if(wchk('wgi'))safety.push('腸胃耐受差：需預防腹瀉、噁心、食慾與體重下降，討論降劑量或中斷方案。');
- if(wchk('wpreg'))safety.push('生殖風險：MMF 具胚胎毒性，抗纖維化藥也須查仿單，不能自行使用。');
- if(wval('wcurrent')==='pir')safety.push('現用 Pirfenidone：Nerandomilast 存在交互作用，9 mg BID 減量規則不可直接套用。');
- follow.push('Nintedanib：腹瀉、肝酵素上升、出血／胃腸道事件；治療前檢查肝功能，最初三個月定期追蹤，之後依臨床需要。');
- follow.push('Pirfenidone：噁心、食慾下降、光敏感／皮疹與肝功能異常；用餐服藥、依商品仿單循序調量。');
- follow.push('Nerandomilast：腹瀉、體重下降、食慾及情緒變化，並檢視 CYP3A 和 Pirfenidone 交互作用。');
- if(type==='ctd')follow.push('免疫抑制劑需 CBC、感染、肝腎功能與生殖安全監測，必要時先評估 HBV／TB 等。');
- follow.push('每 3–6 個月追蹤 FVC、Hb 校正 DLCO、症狀、SpO₂／運動血氧；依惡化評估 HRCT、6MWT、肺復健、氧療與肺移植。');
+ var plan=PFE.plan({dis:dis,mdd:mdd,ppf:dis==='ipf'?'no':p.ppf?'yes':p.can?'no':'uncertain',act:urgent?'urgent':wval('winfl')==='yes'?'yes':'no',pattern:pat==='uip'||pat==='prob'?'uip':pat==='nsip'?'nsip':'other',fvc:f,dlco:d,egfr:wnum('wegfr'),liver:wval('wliver'),age:wnum('wa'),spo2:sp,exspo2:walk,current:wval('wcurrent')==='unknown'?'none':wval('wcurrent'),bleed:wchk('wbleed'),gi:wchk('wgi'),immune:wchk('wimmune'),preg:wchk('wpreg'),infect:wchk('winfect')});
  if(f!==null&&f<50)risk.push('FVC <50% predicted，肺功能受損較重');
  else if(f!==null&&f<80)risk.push('FVC <80% predicted');
  if(d!==null&&d<35)risk.push('DLCO <35%，氣體交換能力明顯受損');
@@ -118,25 +326,48 @@ function wReport(){
  if(p.ppf)risk.push('已符合 PPF 表型');
  if(urgent)risk.push('急性／快速惡化');
  if(walk!==null&&walk<=88)risk.push('運動時低氧');
+ if(mda5)risk.push('anti-MDA5 抗體');
  var outlook=(risk.length?'需注意的預後不利因素：'+risk.join('；')+'。':'暫無本工具所列出的明確預後不利指標；資料不足不能推論低風險。')+' 個人存活期無法由單次 FVC/DLCO 可靠估計；應結合病因、進展速度、氧氣需求、急性惡化與共病。治療重點為減緩下降並維持功能。';
  var warning=urgent?'<div class="danger"><b>高優先級警訊：需要即時臨床評估</b></div>':'';
  document.getElementById('wresult').innerHTML=warning+
  wBlock('1｜診斷判讀','<p><b>'+diagnosis+'</b></p>'+(missing.length?wBullets(missing):'<p>仍需核對原始 HRCT、完整病史與多專科紀錄。</p>'))+
- wBlock('2｜PPF 計算','<p>FVC 絕對下降 '+wfmt(p.fd)+' 百分點；DLCO 絕對下降 '+wfmt(p.dd)+' 百分點。症狀／生理／影像共 '+p.count+'/3 類。</p><p>'+(type==='ipf'?'IPF 不適用 PPF 定義。':p.ppf?'符合 PPF 初步定義。':'尚未能確定符合 PPF。')+'</p>')+
- wBlock('3｜治療與劑量選擇（供專科決策）',wBullets(therapy))+
- wBlock('4｜禁忌與個別安全警示',safety.length?wBullets(safety):'<p>未勾選特殊風險，但仍需核對完整用藥史及肝腎功能。</p>')+
- wBlock('5｜副作用及監測',wBullets(follow))+
- wBlock('6｜預後與長期管理','<p>'+outlook+'</p>')+
+ wBlock('2｜PPF 計算','<p>FVC 絕對下降 '+wfmt(p.fd)+' 百分點；DLCO 絕對下降 '+wfmt(p.dd)+' 百分點。症狀／生理／影像共 '+p.count+'/3 類。</p><p>'+(dis==='ipf'?'IPF 不適用 PPF 定義。':p.ppf?'符合 PPF 初步定義。':'尚未能確定符合 PPF。')+'</p>')+
+ wBlock('3｜治療計畫（供專科決策）',renderPlan(plan)+'<p class="hint">更多風險因子（CYP 交互作用、憂鬱、吸菸、SSc 腎危象）請在「治療計畫」頁補充。</p>')+
+ wBlock('4｜預後與長期管理','<p>'+outlook+'</p>')+
  '<div class="notice">台灣 TFDA 適應症、商品劑型與健保 6.2.7 申請資格須獨立查證。Nerandomilast／吸入 Treprostinil 不可因美國新藥或試驗陽性便視為台灣 IPF 核准用藥。本頁僅為臨床教育與決策輔助。</div>';
 }
 function wReset(){document.querySelectorAll('#wizard input').forEach(function(e){if(e.type==='checkbox')e.checked=false;else e.value=''});document.querySelectorAll('#wizard select').forEach(function(e){e.selectedIndex=0});document.getElementById('wresult').innerHTML='';document.getElementById('wcalc').innerHTML='';wGo(0)}
 wGo(0);
 
-const tabs=[['wizard','臨床引導'],['overview','總覽'],['hrct','HRCT 判讀'],['ppf','PPF 計算'],['treat','個別化治療'],['meds','藥物機轉'],['taiwan','台灣健保'],['cases','8 病例'],['quiz','20 題測驗'],['mind','心智圖'],['sources','證據來源']];const $=id=>document.getElementById(id),v=id=>$(id).value,ck=id=>$(id).checked,fmt=x=>Number(x).toFixed(1);$('nav').innerHTML=tabs.map(([id,n])=>`<button data-tab="${id}" onclick="showTab('${id}')">${n}</button>`).join('');function showTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));location.hash=id;scrollTo({top:0,behavior:'smooth'})}showTab(tabs.some(t=>t[0]===location.hash.slice(1))?location.hash.slice(1):'overview');
+const tabs=[['wizard','臨床引導'],['overview','總覽'],['hrct','HRCT 判讀'],['ppf','PPF 計算'],['treat','治療計畫'],['meds','藥物機轉'],['taiwan','台灣健保'],['cases','11 病例'],['quiz','25 題測驗'],['mind','心智圖'],['sources','證據來源']];const $=id=>document.getElementById(id),v=id=>$(id).value,ck=id=>$(id).checked,fmt=x=>Number(x).toFixed(1);$('nav').innerHTML=tabs.map(([id,n])=>`<button data-tab="${id}" onclick="showTab('${id}')">${n}</button>`).join('');function showTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));location.hash=id;scrollTo({top:0,behavior:'smooth'})}showTab(tabs.some(t=>t[0]===location.hash.slice(1))?location.hash.slice(1):'overview');addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(tabs.some(t=>t[0]===h)&&!$(h).classList.contains('active'))showTab(h)});
 function evalHRCT(){let d=v('dist'),h=v('honey'),t=v('traction'),a=v('alt'),cause=v('cause'),conf=v('confidence'),pattern=a==='yes'||d==='alt'?'Alternative diagnosis suggested':d==='basal'&&h==='yes'?'UIP pattern':d==='basal'&&h==='no'&&t==='yes'?'Probable UIP pattern':'Indeterminate / further review';let extra=cause!=='none'?'已存在可能病因：此型態不能直接稱為 IPF。':'若無其他原因且臨床適合，MDD 可討論 IPF 診斷。';$('hrctout').innerHTML=`<div class="${conf==='poor'?'notice':'good'}"><b>判讀提示：${pattern}</b><p>${extra}</p><p>${conf==='poor'?'影像品質受限，需重做適當 HRCT 或專家重新判讀。':'影像模式僅為線索；需結合高品質薄層 HRCT、病史及 MDD。'}</p></div>`}
 function numbers(ids){const n=ids.map(id=>Number(v(id)));if(ids.some(id=>v(id).trim()==='')||n.some(x=>!Number.isFinite(x)||x<0||x>150))return null;return n}function calcPPF(data){let [f0,f1,d0,d1]=data,fd=f0-f1,dd=d0-d1;return {fd,dd,phys:fd>=5||dd>=10}}function evalPPF(){let data=numbers(['fvc0','fvc1','dl0','dl1']);if(!data){$('ppfout').innerHTML='<div class="danger">請輸入 0–150 的有效數值。</div>';return}let p=calcPPF(data),c=Number(p.phys)+Number(ck('sym'))+Number(ck('radi')),elig=ck('fib')&&ck('within')&&ck('excl');$('ppfout').innerHTML=`<div class="${elig&&c>=2?'good':'notice'}"><b>FVC 下降 ${fmt(p.fd)} 個百分點；DLCO 下降 ${fmt(p.dd)} 個百分點</b><p>生理進展 ${p.phys?'符合':'不符合'}；症狀 ${ck('sym')?'符合':'不符合'}；影像 ${ck('radi')?'符合':'不符合'}。共 ${c}/3 類。</p><b>${!elig?'前提未全部成立，無法判定 PPF':c>=2?'符合 ATS 2022 PPF 定義（初步）':'不符合 ATS 2022 PPF 定義'}</b></div>`}evalPPF();
-function evalTreatment(){let dis=v('disease'),pr=v('progress'),inf=v('inflammation'),eg=Number(v('txegfr')),f=Number(v('txfvc')),dl=Number(v('txdlco'));if([eg,f,dl].some(x=>!Number.isFinite(x)||x<0||x>150)||['txegfr','txfvc','txdlco'].some(id=>v(id)==='')){$('txout').innerHTML='<div class="danger">肺功能／eGFR 請輸入 0–150 的有效數值。</div>';return}let out=[],cautions=[];if(inf==='urgent')out.push('⚠️ 緊急流程：先排除感染、肺栓塞、心衰與 AE-ILD；快速進展 IIM/anti-MDA5 應立即專科住院評估，不可單用口服抗纖維化藥。');if(dis==='ipf'){out.push('IPF：優先討論 Nintedanib 150 mg PO BID（可依耐受性調整為 100 mg BID）或台灣 Pirespa Pirfenidone 依台灣仿單由 200 mg TID 緩升至目標劑量。');out.push('Nerandomilast：美國核准 18 mg BID（部分情況 9 mg BID），但台灣可取得性與健保尚未確認，不列為常規台灣可申請處方。');out.push('不建議常規 Prednisolone + Azathioprine + NAC 三合一方案。')}else{if(dis==='ss')out.push('SSc-ILD：優先討論 MMF（例如逐步增加至 1–1.5 g BID，需依耐受性、感染及血球等調整）；特殊病型可考慮 Rituximab、Tocilizumab 或 Cyclophosphamide。避免高劑量全身性類固醇造成腎危象風險。');if(dis==='ra')out.push('RA-ILD：依肺部與關節活動度討論 MMF 或 Rituximab 等；UIP 型可由專家討論 Pirfenidone，屬條件式低確定性建議，勿直接視為台灣健保適應症。');if(dis==='iim')out.push('IIM-ILD：優先免疫抑制，可能需要類固醇＋MMF/Tacrolimus/Rituximab/IVIG 等多重方案；anti-MDA5 急進型需積極跨科治療。');if(dis==='otherctd')out.push('其他 CTD-ILD：依 SLE／SjD／MCTD 原病活動性討論免疫抑制（如 MMF、Rituximab），同時評估感染風險。');if(dis==='hp')out.push('Fibrotic HP：優先確認並去除抗原暴露；具活動性發炎時可考慮免疫調節，但須與感染鑑別。');if(dis==='other')out.push('其他非 IPF 纖維化 ILD：優先釐清病因及炎症活動性，MDD 後依特定疾病治療。');if(pr==='yes')out.push('已符合 PPF：可討論 Nintedanib 150 mg BID（不耐受時 100 mg BID）；CTD-ILD 可視情況與 MMF 合併，並查核台灣 PF-ILD 事前審查。Nerandomilast 美國已有 PPF 核准，台灣狀態仍待查。');else out.push('尚未確認 PPF：若非 SSc-ILD 特定治療情境，不應單以纖維化影像就自動加入抗纖維化藥；先追蹤 FVC、DLCO 與 HRCT。')}if(eg<15)cautions.push('eGFR <15/ESRD：Nerandomilast 美國仿單不建議使用；Pirfenidone ESRD／透析不建議；Nintedanib 重度腎功能資料不足。');else if(eg<30)cautions.push('eGFR <30：需重新核對藥物仿單、共病與用藥，MMF 等免疫抑制亦須個別評估。');if(ck('liver'))cautions.push('有肝病：抗纖維化藥物需要詳細肝功能評估、起始／追蹤 AST/ALT/bilirubin，部分情境須減量或避免。');if(ck('bleed'))cautions.push('抗凝血／出血風險：Nintedanib 的 VEGFR 相關出血風險需權衡。');if(ck('gi'))cautions.push('胃腸道耐受差：Nintedanib／Nerandomilast 腹瀉或體重減輕風險，需與患者討論。');if(ck('pir'))cautions.push('正在使用 Pirfenidone：不可與 Nintedanib 同時申請台灣健保；Pirfenidone 會降低 Nerandomilast 暴露，禁止直接以 9 mg BID 替代標示劑量。');if(ck('mmf'))cautions.push('MMF：監測 CBC、感染、肝腎功能、懷孕禁忌及腸胃副作用；SSc-ILD 合併 Nintedanib 可依指引討論。');out.push('追蹤：3–6 個月 PFT（FVC、DLCO），每次評估 SpO₂／運動血氧、症狀、體重、腸胃耐受；影像變化或臨床惡化時重做 HRCT；評估復健、氧療與肺移植。');$('txout').innerHTML=`<div class="good"><b>臨床建議（供 MDD 核對）</b><ol>${out.map(x=>`<li>${x}</li>`).join('')}</ol></div>${cautions.length?`<div class="danger"><b>個別化安全警示</b><ul>${cautions.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}<div class="notice">健保適用條件需至「台灣健保」頁另行判斷，不能由臨床適應症推定給付。</div>`}
-function evalNHI(){let f=Number(v('nhifvc')),d=Number(v('nhidlco'));if(['nhifvc','nhidlco'].some(id=>v(id)==='')||[f,d].some(x=>!Number.isFinite(x)||x<0||x>150)){$('nhiout').innerHTML='<div class="danger">請輸入有效 FVC、DLCO。</div>';return}let isIPF=v('nhitype')==='ipf',reasons=[];if(!ck('nhihrct'))reasons.push('缺 HRCT');if(!ck('nhispec'))reasons.push('缺專科確診紀錄');if(isIPF){if(f<50)reasons.push('IPF 首次申請 FVC <50%，未達本工具引用條文範圍');if(f>80&&!ck('nhisym'))reasons.push('FVC >80% 而未記載明顯症狀')}else{if(!ck('nhifib'))reasons.push('未證實 HRCT 纖維化 ≥10% 肺野');if(!ck('nhipft'))reasons.push('未確認一年內生理進展');if(!ck('nhieither'))reasons.push('未確認同步症狀或影像進展');if(f<45||f>80)reasons.push('FVC 不在 45–80%');if(d<30||d>80)reasons.push('DLCO 不在 30–80%');if(!ck('nhisym'))reasons.push('缺臨床症狀紀錄')}let ok=reasons.length===0;$('nhiout').innerHTML=`<div class="${ok?'good':'notice'}"><b>${ok?'初步符合已收錄的申請條件，仍須正式審查':'目前缺少必要條件或超出範圍'}</b>${ok?'':`<ul>${reasons.map(x=>`<li>${x}</li>`).join('')}</ul>`}<p>須再確認 2026 最新規定、影像與病歷附件、審核機制及續用條款。</p></div>`}
+const STCLASS={first:'st-first',continue:'st-first',switch:'st-warn',option:'st-ok',reduced:'st-warn',caution:'st-warn',offlabel:'st-warn',foreign:'st-grey',defer:'st-warn',avoid:'st-bad',na:'st-grey'};
+function li(xs){return '<ul>'+xs.map(x=>'<li>'+x+'</li>').join('')+'</ul>'}
+function renderPlan(p){
+ let h='<div class="'+(p.urgent?'danger':'good')+'"><b>計畫摘要：</b>'+p.summary+'</div>';
+ if(p.alerts.length)h+='<div class="danger"><b>優先警示</b>'+li(p.alerts)+'</div>';
+ if(p.missing.length)h+='<div class="notice"><b>資料缺口</b>'+li(p.missing)+'</div>';
+ let n=1;
+ if(p.acute.length)h+='<div class="phase"><h4>'+(n++)+'｜急性處置</h4>'+li(p.acute)+'</div>';
+ if(p.disease.length)h+='<div class="phase"><h4>'+(n++)+'｜病因與免疫治療</h4>'+li(p.disease)+'</div>';
+ h+='<div class="phase"><h4>'+(n++)+'｜抗纖維化藥逐一評估</h4><div class="drugs">'+p.drugs.map(d=>'<article class="drug '+STCLASS[d.status]+'" data-drug="'+d.key+'" data-status="'+d.status+'"><div class="drughead"><b>'+d.name+'</b><span class="stbadge">'+d.statusText+'</span></div>'+(d.dose&&d.status!=='avoid'&&d.status!=='na'?'<p class="dose">'+d.dose+'</p>':'')+(d.notes.length?li(d.notes):'')+'</article>').join('')+'</div><p class="hint">Nintedanib 與 pirfenidone 指引地位相同（IPF 條件式建議），本工具依禁忌與注意事項多寡排序；台灣健保不得併用兩者。</p></div>';
+ h+='<div class="phase"><h4>'+(n++)+'｜支持療法、氧療與移植</h4>'+li(p.support)+'</div>';
+ h+='<div class="phase"><h4>'+(n++)+'｜監測時程</h4><div class="table-wrap"><table class="tl"><tr><th>時間</th><th>項目</th></tr>'+p.timeline.map(r=>'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>').join('')+'</table></div></div>';
+ h+='<div class="phase"><h4>'+(n++)+'｜治療失敗與升級條件</h4>'+li(p.escalate)+'</div>';
+ return h;
+}
+function optNum(id){const s=v(id);if(s.trim()==='')return {ok:true,v:null};const n=Number(s);return {ok:Number.isFinite(n),v:n}}
+function treatInput(){
+ const bad=[];const g=(id,lo,hi)=>{const r=optNum(id);if(!r.ok||(r.v!==null&&(r.v<lo||r.v>hi)))bad.push(id);return r.v};
+ const o={dis:v('disease'),mdd:ck('txmdd'),ppf:v('progress'),act:v('inflammation'),pattern:v('pattern'),current:v('txcurrent'),intol:v('txintol'),fvc:g('txfvc',0,150),dlco:g('txdlco',0,150),egfr:g('txegfr',0,150),liver:v('txliver'),age:g('txage',18,110),spo2:g('txspo',50,100),exspo2:g('txex',50,100),progOnTx:ck('txprog'),bleed:ck('bleed'),gi:ck('gi'),smoker:ck('txsmoke'),cyp1a2:ck('txcyp1a2'),cyp3a:ck('txcyp3a'),cyp3aInd:ck('txcyp3aind'),depress:ck('txdep'),preg:ck('txpreg'),mmf:ck('mmf'),steroidHigh:ck('txsteroid'),src:ck('txsrc'),infect:ck('txinfect'),ph:ck('txph')};
+ return {o,bad};
+}
+function evalTreatment(){const {o,bad}=treatInput();if(bad.length){$('txout').innerHTML='<div class="danger">數值超出範圍：FVC／DLCO／eGFR 0–150、年齡 18–110、SpO₂ 50–100（可留白）。</div>';return}$('txout').innerHTML=renderPlan(PFE.plan(o))+'<div class="notice">健保適用條件請至「台灣健保」頁另行判斷；臨床適應症不等於給付資格。</div>'}
+function nhiToggle(){const t=v('nhitype');document.querySelectorAll('[data-nhi]').forEach(e=>{e.style.display=e.dataset.nhi.split(' ').includes(t)?'':'none'})}
+function evalNHI(){const r=PFE.nhi({type:v('nhitype'),fvc:v('nhifvc'),dlco:v('nhidlco'),hrct:ck('nhihrct'),spec:ck('nhispec'),sym:ck('nhisym'),fib10:ck('nhifib'),pft:ck('nhipft'),either:ck('nhieither'),rheum:ck('nhirheum'),isfail:ck('nhiisfail'),combo:ck('nhicombo')});if(r.invalid){$('nhiout').innerHTML='<div class="danger">'+r.reasons[0]+'</div>';return}$('nhiout').innerHTML=`<div class="${r.ok?'good':'notice'}"><b>${r.ok?'初步符合已收錄的初次申請條件，仍須正式事前審查':'目前缺少必要條件或超出範圍'}</b>${r.ok?'':li(r.reasons)}<p>${r.renew}</p></div>`}
+function evalRenew(){const t=v('rntype');const r=PFE.renew({type:t,prev:v('rnprev'),now:v('rnnow'),weeks:v('rnweeks'),ml:v('rnml')});$('rnout').innerHTML=`<div class="${r.level}">${r.text}</div>`}
+function rnToggle(){const t=v('rntype');document.querySelectorAll('[data-rn]').forEach(e=>{e.style.display=e.dataset.rn.split(' ').includes(t)?'':'none'})}
 const cases=[
 {t:'01｜典型 IPF、早期發現',d:'69 歲男性、乾咳 8 個月；HRCT 基底胸膜下蜂窩化；無 CTD、藥物與暴露；FVC 88%、DLCO 56%；MDD 支持 IPF。',q:'FVC 尚有 88%，應等待進展才開始治療嗎？',a:'不應只因 FVC >80% 就延後抗纖維化治療討論。Nintedanib 或 Pirfenidone 可依個別情況選擇；同時評估運動血氧、復健與移植風險。台灣健保 IPF FVC >80% 時需明顯症狀紀錄並依最新版規範申請。',tag:'IPF · UIP'},
 {t:'02｜Probable UIP + RA',d:'64 歲女性，RA 15 年；HRCT 基底部牽拉性支氣管擴張，無蜂窩化；anti-CCP 陽性；FVC 73%。',q:'Probable UIP 可直接診斷 IPF 嗎？',a:'不能。此例有已知 RA，應評估 RA-ILD，並結合 MDD；依關節及肺部活動性討論免疫調節（如 Rituximab、MMF）。若進展達 PPF，再討論 Nintedanib。',tag:'RA-ILD · Probable UIP'},
@@ -145,15 +376,25 @@ const cases=[
 {t:'05｜慢性過敏性肺炎',d:'60 歲養鳥者，HRCT 網狀影合併 air trapping／三密度徵，FVC 76→68%，呼吸困難加重。',q:'影像呈纖維化時，應一律稱為 IPF 嗎？',a:'不應。臨床符合 fibrotic HP，應詳查並去除鳥類／環境抗原、MDD 評估發炎是否需免疫調節。若一年內症狀＋生理進展且排除其他原因，符合 PPF；可討論 Nintedanib。',tag:'HP · PPF'},
 {t:'06｜anti-MDA5 急性快速進展',d:'46 歲女性，皮肌炎、anti-MDA5 陽性，3 週內呼吸困難急遽增加，HRCT 新增廣泛 GGO，氧氣需求快速升高。',q:'是否適合僅開立 Nerandomilast 等待追蹤？',a:'不適合。疑似 rapidly progressive IIM-ILD，須急診／住院評估感染與其他原因，並由跨科團隊考慮及早積極免疫抑制（常為多藥方案）。慢性抗纖維化藥不能取代急性處置。',tag:'IIM · 急症'},
 {t:'07｜ESRD 合併 IPF',d:'74 歲男性維持性 HD，MDD 診斷 IPF；FVC 61%、DLCO 37%，已使用多項抗凝血／抗血小板藥物。',q:'能否直接選擇 Nerandomilast 18 mg BID？',a:'不宜直接使用。美國仿單不建議 eGFR <15 / ESRD 使用 Nerandomilast；Pirfenidone 透析亦不建議；Nintedanib 在重度腎功能不全缺乏足夠資料且有出血風險，需胸腔科／腎臟科個別評估。',tag:'IPF · ESRD'},
-{t:'08｜台灣健保 PF-ILD 申請',d:'65 歲男性，非 IPF 纖維化 ILD，HRCT 纖維化 15% 肺野，近 1 年 FVC 73→67%、DLCO 50→45%，症狀惡化，專科已確認進展。',q:'是否可以不附影像、直接申請 Nintedanib？',a:'不可。PF-ILD 需 HRCT 證明纖維化 ≥10%、專科紀錄一年內生理下降且合併症狀或影像惡化，並符合首次 FVC 45–80% 及 DLCO 30–80%、附上事前審查資料；正式審查與續用規定須以最新公告為準。',tag:'PF-ILD · 健保'}];
+{t:'08｜台灣健保 PF-ILD 申請',d:'65 歲男性，非 IPF 纖維化 ILD，HRCT 纖維化 15% 肺野，近 1 年 FVC 73→67%、DLCO 50→45%，症狀惡化，專科已確認進展。',q:'是否可以不附影像、直接申請 Nintedanib？',a:'不可。PF-ILD 需 HRCT 證明纖維化 ≥10%、專科紀錄一年內生理下降且合併症狀或影像惡化，並符合首次 FVC 45–80% 及 DLCO 30–80%、附上事前審查資料；正式審查與續用規定須以最新公告為準。',tag:'PF-ILD · 健保'},
+{t:'09｜高難度：Pirfenidone 下仍進展＋抗凝＋疑似肺高壓',hard:true,d:'71 歲男性，MDD 確診 IPF，Pirespa 600 mg TID 已 18 個月。最近一次健保申請時 FVC 68%，本次 57%；DLCO 41→33%。陣發性心房顫動長期服 apixaban。休息 SpO₂ 93%，6MWT 最低 84%；心臟超音波 TR 峰速 3.2 m/s。eGFR 52，肝功能正常，已戒菸。過去 2 個月無感染症狀，CTPA 無肺栓塞。',q:'健保規則下的藥物策略、抗凝處理，以及非藥物計畫各是什麼？',a:'<ol><li><b>先確認真進展：</b>FVC 絕對下降 11 pp，已排除感染與肺栓塞；仍須排除肺高壓、心衰與檢查變異。TR 3.2 m/s 屬中度以上肺高壓機率，安排 BNP 與右心導管，確認 PH-ILD。</li><li><b>健保：</b>較最近一次申請下降 ≥10 pp → 進入 12 週緩衝期，期間可續用或申請不同機轉藥物（nintedanib）12 週；緩衝期後仍較低即停藥。兩藥不得併用。</li><li><b>轉換 nintedanib 150 mg BID：</b>無肝病、eGFR 52 可用。Apixaban 不是絕對禁忌，但 VEGFR 抑制增加出血風險（關鍵試驗排除全劑量抗凝），須重新計算 CHA₂DS₂-VASc／HAS-BLED、檢視抗血小板併用並衛教。</li><li><b>Nerandomilast：</b>美國仿單可加在 pirfenidone 上（18 mg BID，不可降為 9 mg），但台灣許可與給付未確認。</li><li><b>非藥物：</b>運動 SpO₂ 84% → 攜帶式氧氣滴定；肺復健；PH-ILD 吸入 treprostinil 於台灣須另查；71 歲、DLCO <40%、進展 → 立即移植中心評估；安寧緩和共照。</li></ol>',tag:'IPF · 健保緩衝期 · PH',x:{dis:'ipf',mdd:true,ppf:'no',act:'no',pattern:'uip',fvc:57,dlco:33,egfr:52,liver:'normal',age:71,spo2:93,exspo2:84,current:'pir',progOnTx:true,bleed:true,ph:true},nhi:{type:'ipf',weeks:72,prev:68,now:57}},
+{t:'10｜高難度：SSc-ILD 在 MMF 下進展＋腎危象徵兆',hard:true,d:'49 歲女性，早期瀰漫型 SSc（發病 18 個月），anti-Scl-70 陽性、CRP 2.8 mg/dL、皮膚分數上升。MMF 1.5 g BID 已 7 個月，FVC 69→62%、DLCO 47→41%，HRCT NSIP 纖維化增加（約 20% 肺野），呼吸困難加重。外院因關節炎開 prednisolone 20 mg/日。本次血壓 168/98（平時 110/70），肌酸酐 0.8 → 1.3 mg/dL（eGFR 48），尿蛋白 1+。',q:'先處理什麼？ILD 如何升級？健保 nintedanib 資格？',a:'<ol><li><b>急症優先：</b>新發高血壓＋肌酸酐上升＋prednisolone 20 mg，高度懷疑硬皮症腎危象 → 住院，查血液抹片（裂解紅血球）、LDH、血小板、haptoglobin；立即以 captopril 等 ACE 抑制劑滴定控壓（即使肌酸酐上升也持續），類固醇盡快減至 <15 mg/日或停用。</li><li><b>ILD 進展：</b>MMF 目標劑量 ≥6 個月仍有症狀＋生理＋影像進展 → 符合 PPF。腎危象穩定後可合併 nintedanib 150 mg BID（SENSCIS 約半數背景 MMF）；早期瀰漫型且 CRP 升高可考慮 tocilizumab 162 mg SC 每週；亦可改 rituximab 或 IV CYC。</li><li><b>健保 6.2.7-2：</b>風濕科確診 SSc、HRCT ≥10%、FVC 62%（≥40）、DLCO 41%（30–89）、MMF 6 個月最高耐受劑量失敗、症狀記載 → 符合；每 26 週再申請。</li><li><b>監測：</b>每次量血壓、肌酸酐；nintedanib 肝功能每月 ×3；MMF CBC。</li></ol>',tag:'SSc-ILD · 腎危象 · 升級',x:{dis:'ss',mdd:true,ppf:'yes',act:'yes',pattern:'nsip',fvc:62,dlco:41,egfr:48,liver:'normal',age:49,mmf:true,steroidHigh:true,src:true},nhi:{type:'ssc',fvc:62,dlco:41,hrct:true,spec:true,sym:true,fib10:true,rheum:true,isfail:true}},
+{t:'11｜高難度：纖維化 HP＋Child-Pugh B 肝硬化',hard:true,d:'63 歲男性，羽絨被與浴室黴菌暴露，BAL 淋巴球 32%，MDD 診斷纖維化 HP。去除可見抗原並以 prednisolone 20 mg/日 3 個月後，一年內 FVC 68→58%、DLCO 36→28%，呼吸困難與 HRCT 纖維化皆增加。酒精性肝硬化 Child-Pugh B（已戒酒），eGFR 55。休息 SpO₂ 91%，運動最低 86%。家人週末仍在陽台餵鴿。',q:'抗纖維化藥怎麼選？健保 PF-ILD 是否可申請？還要處理什麼？',a:'<ol><li><b>抗原：</b>鴿子仍是持續暴露來源，須完全移除（含家人衣物、陽台清理）；持續暴露是 HP 惡化最強因子。</li><li><b>PPF：</b>症狀＋生理＋影像 3/3，符合。</li><li><b>Nintedanib：</b>Child-Pugh B 不建議使用（肝損傷風險）。<b>Pirfenidone：</b>非 IPF 屬仿單外且健保不給付。<b>Nerandomilast：</b>美國仿單 Child-Pugh B 與 eGFR ≥15 不需調整劑量，是理論上最合適的抗纖維化選項，但台灣許可與給付未確認。</li><li><b>健保 PF-ILD：</b>DLCO 28% 低於起始門檻 30–80%，即使肝功能允許也不符 6.2.7-3。</li><li><b>免疫治療：</b>類固醇 3 個月無效 → 以 MMF 或 azathioprine 取代並漸減類固醇；PJP 預防、骨質與血糖監測；肝硬化者 azathioprine 與 MMF 都須監測肝功能與血球。</li><li><b>支持與預後：</b>運動 SpO₂ 86% → 攜帶式氧氣；肺復健；肝硬化通常為單純肺移植禁忌，移植中心評估是否可行；及早安寧緩和共照。</li></ol>',tag:'HP · 肝硬化 · 健保門檻',x:{dis:'hp',mdd:true,ppf:'yes',act:'yes',pattern:'other',fvc:58,dlco:28,egfr:55,liver:'b',age:63,spo2:91,exspo2:86,immune:true},nhi:{type:'pf',fvc:58,dlco:28,hrct:true,spec:true,sym:true,fib10:true,pft:true,either:true}}];
 const caseProfiles=[{"d":"ipf","p":"no","i":"no","h":"uip","f":88,"dl":56,"e":75},{"d":"ra","p":"uncertain","i":"yes","h":"uip","f":73,"dl":50,"e":68},{"d":"ss","p":"yes","i":"yes","h":"nsip","f":66,"dl":43,"e":70,"mmf":true},{"d":"other","p":"no","i":"no","h":"nsip","f":64,"dl":39,"e":58},{"d":"hp","p":"yes","i":"yes","h":"other","f":68,"dl":44,"e":72},{"d":"iim","p":"uncertain","i":"urgent","h":"other","f":52,"dl":34,"e":63},{"d":"ipf","p":"no","i":"no","h":"uip","f":61,"dl":37,"e":7,"bleed":true},{"d":"other","p":"yes","i":"no","h":"nsip","f":67,"dl":45,"e":65}];
+function caseInput(n){const c=cases[n];if(c.x)return c.x;const p=caseProfiles[n];return {dis:p.d,mdd:true,ppf:p.p,act:p.i,pattern:p.h,fvc:p.f,dlco:p.dl,egfr:p.e,liver:'normal',mmf:!!p.mmf,bleed:!!p.bleed}}
+const TXMAP={dis:['disease','v'],mdd:['txmdd','c'],ppf:['progress','v'],act:['inflammation','v'],pattern:['pattern','v'],current:['txcurrent','v'],intol:['txintol','v'],fvc:['txfvc','v'],dlco:['txdlco','v'],egfr:['txegfr','v'],liver:['txliver','v'],age:['txage','v'],spo2:['txspo','v'],exspo2:['txex','v'],progOnTx:['txprog','c'],bleed:['bleed','c'],gi:['gi','c'],smoker:['txsmoke','c'],cyp1a2:['txcyp1a2','c'],cyp3a:['txcyp3a','c'],cyp3aInd:['txcyp3aind','c'],depress:['txdep','c'],preg:['txpreg','c'],mmf:['mmf','c'],steroidHigh:['txsteroid','c'],src:['txsrc','c'],infect:['txinfect','c'],ph:['txph','c']};
+const TXDEF={dis:'ipf',mdd:true,ppf:'no',act:'no',pattern:'uip',current:'none',intol:'none',liver:'normal'};
 function loadCaseToTreatment(n){
- const c=caseProfiles[n];
- for(const [id,val] of [['disease',c.d],['progress',c.p],['inflammation',c.i],['pattern',c.h],['txfvc',c.f],['txdlco',c.dl],['txegfr',c.e]])document.getElementById(id).value=val;
- for(const id of ['liver','bleed','gi','pir','mmf'])document.getElementById(id).checked=!!c[id];
+ const x=Object.assign({},TXDEF,caseInput(n));
+ for(const k in TXMAP){const [id,t]=TXMAP[k],e=$(id);if(t==='c')e.checked=!!x[k];else e.value=(x[k]===undefined||x[k]===null)?'':x[k]}
  showTab('treat');evalTreatment();
 }
-function selectCase(n){document.querySelectorAll('.casebtn').forEach((x,i)=>x.classList.toggle('selected',i===n));let c=cases[n];$('caseContent').innerHTML=`<span class="badge">${c.tag}</span><h3>${c.t}</h3><p>${c.d}</p><div class="notice"><b>臨床問題：</b>${c.q}</div><details><summary>顯示建議與解析</summary><div>${c.a}</div></details><p class="hint">合成病例，用於教學與討論，不代表個別病人醫囑。</p><div class="actions"><button class="btn secondary" onclick="loadCaseToTreatment(${n})">將病例帶入治療決策</button><button class="btn secondary" onclick="selectCase(${(n+7)%8})">前一例</button><button class="btn" onclick="selectCase(${(n+1)%8})">下一例</button></div>`}
+function loadCaseToNHI(n){const c=cases[n].nhi;if(!c)return;
+ $('nhitype').value=c.type;nhiToggle();
+ if(c.fvc!==undefined){$('nhifvc').value=c.fvc;$('nhidlco').value=c.dlco;for(const k of ['hrct','spec','sym','fib10','pft','either','rheum','isfail','combo']){const id={hrct:'nhihrct',spec:'nhispec',sym:'nhisym',fib10:'nhifib',pft:'nhipft',either:'nhieither',rheum:'nhirheum',isfail:'nhiisfail',combo:'nhicombo'}[k];$(id).checked=!!c[k]}evalNHI()}
+ if(c.prev!==undefined){$('rntype').value=c.type;rnToggle();$('rnweeks').value=c.weeks;$('rnprev').value=c.prev;$('rnnow').value=c.now;evalRenew()}
+ showTab('taiwan')}
+function selectCase(n){const N=cases.length;document.querySelectorAll('.casebtn').forEach((x,i)=>x.classList.toggle('selected',i===n));let c=cases[n];$('caseContent').innerHTML=`<span class="badge">${c.tag}</span>${c.hard?'<span class="badge hard">高難度</span>':''}<h3>${c.t}</h3><p>${c.d}</p><div class="notice"><b>臨床問題：</b>${c.q}</div><details><summary>顯示建議與解析</summary><div>${c.a}</div></details><p class="hint">合成病例，用於教學與討論，不代表個別病人醫囑。帶入後的治療計畫由引擎即時計算。</p><div class="actions"><button class="btn secondary" onclick="loadCaseToTreatment(${n})">帶入治療計畫</button>${c.nhi?`<button class="btn secondary" onclick="loadCaseToNHI(${n})">帶入健保核對</button>`:''}<button class="btn secondary" onclick="selectCase(${(n+N-1)%N})">前一例</button><button class="btn" onclick="selectCase(${(n+1)%N})">下一例</button></div>`}
 $('caseList').innerHTML=cases.map((c,i)=>`<button class="casebtn" onclick="selectCase(${i})"><b>${c.t}</b><br><span class="hint">${c.tag}</span></button>`).join('');selectCase(0);
 const questions=[
 ['下列何者最能支持典型 UIP HRCT？',['雙肺均勻磨玻璃影','胸膜下基底部蜂窩化，伴網狀影','上肺葉游走性實變','中央肺門淋巴結腫大'],1,'典型 UIP 為胸膜下及基底部優勢網狀纖維化與蜂窩化。'],
@@ -175,6 +416,11 @@ const questions=[
 ['在台灣，IPF 申請 Nintedanib/Pirfenidone 應先確認？',['僅須病人希望用藥','健保 6.2.7 事前審查及影像／肺功能條件','只要 FDA 核准','不需病歷紀錄'],1,'TFDA 適應症與健保給付需分開核對。'],
 ['台灣 PF-ILD Nintedanib 首次申請公開條文的 FVC/DLCO 範圍為？',['FVC 45–80%、DLCO 30–80%','FVC 90–120%、DLCO 90–120%','FVC <20%、DLCO <10%','完全不限'],0,'依健保 6.2.7 2023 條文；使用前仍須核對最新公告。'],
 ['一名使用 Pirfenidone 的 IPF 病人考慮 Nerandomilast，如何處理交互作用？',['Pirfenidone 可降低 Nerandomilast 暴露，9 mg BID 減量規則不適用','可不看仿單隨意降劑量','一定不能合用','兩藥都無腸胃副作用'],0,'美國仿單對併用 Pirfenidone 及劑量調整有特殊規定。'],
-['76 歲 HD 病人確診 IPF，詢問 Nerandomilast；依美國仿單何者正確？',['可無限制使用','建議所有透析患者用 36 mg BID','不建議 eGFR <15 或 ESRD 使用','只需配合透析後給藥'],2,'ESRD 缺乏足夠資料，仿單不建議使用。']
-];let qi=0,score=0,answered=false,sel=null;function renderQuiz(){answered=false;sel=null;$('qcount').textContent=`第 ${qi+1} / ${questions.length} 題`;$('qscore').textContent=`已答對 ${score} 題`;$('qprog').style.width=`${(qi+1)/questions.length*100}%`;let q=questions[qi];$('qtext').textContent=q[0];$('qchoices').innerHTML=q[1].map((o,i)=>`<label><input type="radio" name="choice" value="${i}" onchange="sel=${i}" /> ${String.fromCharCode(65+i)}. ${o}</label>`).join('');$('qexplain').innerHTML='';$('qsubmit').disabled=false;$('qnext').disabled=true;$('qnext').textContent=qi===questions.length-1?'完成測驗':'下一題'}function submitQuiz(){if(answered)return;if(sel===null){$('qexplain').innerHTML='<div class="notice">請先選擇一個答案。</div>';return}answered=true;let q=questions[qi],ok=sel===q[2];if(ok)score++;$('qscore').textContent=`已答對 ${score} 題`;$('qexplain').innerHTML=`<div class="${ok?'good':'danger'}"><b>${ok?'答對了':'答錯了'}；正確答案：${String.fromCharCode(65+q[2])}</b><p>${q[3]}</p></div>`;$('qsubmit').disabled=true;$('qnext').disabled=false}function nextQuiz(){if(!answered)return;if(qi<questions.length-1){qi++;renderQuiz()}else{$('qexplain').innerHTML=`<div class="good"><b>測驗完成：${score} / ${questions.length} 題（${Math.round(score/questions.length*100)}%）</b><p>可重新測驗檢視題目；建議回到診療流程及台灣健保核對頁複習。</p></div>`;$('qnext').disabled=true}}function resetQuiz(){qi=0;score=0;renderQuiz()}renderQuiz();
+['76 歲 HD 病人確診 IPF，詢問 Nerandomilast；依美國仿單何者正確？',['可無限制使用','建議所有透析患者用 36 mg BID','不建議 eGFR <15 或 ESRD 使用','只需配合透析後給藥'],2,'ESRD 缺乏足夠資料，仿單不建議使用。'],
+['74 歲 IPF 病人用 nintedanib（健保），最近一次申請時 FVC 66%，本次 55%，已排除感染、肺栓塞與檢查誤差。依健保 6.2.7，下列何者正確？',['進入 12 週緩衝期：可續用或申請不同機轉藥物（pirfenidone）12 週，緩衝期後仍較緩衝期前降低則停藥','立即停藥，不得再申請任何抗纖維化藥','改為 nintedanib＋pirfenidone 併用 12 週','須持續用滿 52 週後才可判斷停藥'],0,'IPF 停藥條件：較最近一次申請 FVC 絕對降 ≥10% → 12 週緩衝期，可續用或申請不同機轉藥物；兩藥不得併用；「52 週」門檻屬 SSc-ILD 與 PF-ILD。'],
+['IPF 病人未使用 pirfenidone，Child-Pugh B、eGFR 22，正服 nerandomilast 18 mg BID，因肺炎需併用 clarithromycin（強效 CYP3A 抑制劑）。依美國仿單應如何處理？',['Child-Pugh B 不建議使用，應停藥','維持 18 mg BID，無需調整','併用期間降為 9 mg BID','eGFR <30 不建議使用，應停藥'],2,'美國仿單：Child-Pugh A/B 與 eGFR ≥15 不需調整；併用強效 CYP3A 抑制劑降為 9 mg BID；僅 Child-Pugh C 與 eGFR <15 不建議。'],
+['依健保 6.2.7-2，下列哪一位 SSc-ILD 病人符合 nintedanib 初次申請？（皆已有風濕科 SSc 確診、胸腔科確認 ILD 與症狀紀錄）',['FVC 38%、DLCO 45%，MMF 1.5 g BID 6 個月失敗','FVC 55%、DLCO 92%，CYC 6 個月失敗','FVC 58%、DLCO 44%，MMF 3 個月仍進展','FVC 52%、DLCO 40%，HRCT 纖維化 15%，azathioprine 6 個月最高耐受劑量失敗'],3,'條件：FVC ≥40%、DLCO 30–89%、HRCT ≥10% 肺野、CYC／AZA／MMF 6 個月最高可耐受劑量失敗。A FVC 不足、B DLCO 過高、C 用藥未滿 6 個月。'],
+['早期瀰漫型 SSc-ILD 女性，prednisolone 25 mg/日，血壓由 110/70 升至 172/100，肌酸酐 0.7→1.4 mg/dL，抹片見裂解紅血球。最優先處置？',['加 methylprednisolone 脈衝控制 ILD','住院、ACE 抑制劑（如 captopril）滴定控壓，並減低類固醇','先加 nintedanib，下次門診再評估血壓','以 calcium channel blocker 為首選，肌酸酐上升即停 ACE 抑制劑'],1,'硬皮症腎危象為急症：ACE 抑制劑是基石，肌酸酐上升也不應停用；prednisolone ≥15 mg/日是危險因子；ILD 升級待腎危象穩定後。'],
+['纖維化 HP 合併 Child-Pugh B 肝硬化、eGFR 55；一年內 FVC 68→58%、DLCO 36→28%，症狀與 HRCT 皆惡化。下列敘述何者最正確？',['符合健保 PF-ILD，可申請 nintedanib 100 mg BID','Pirfenidone 是非 IPF PPF 的台灣健保首選','Nintedanib 不建議於 Child-Pugh B；nerandomilast 美國仿單於 Child-Pugh B 不需調整但台灣未確認；本例 DLCO 28% 亦不符 PF-ILD 起始門檻','FVC 與 DLCO 同時下降算兩個構面，加上症狀與影像共 4 項'],2,'Nintedanib 於中重度肝功能不全不建議；健保 PF-ILD 起始需 DLCO 30–80%；pirfenidone 僅 IPF 適應症；FVC／DLCO 同屬生理一類。']
+];let qi=0,score=0,answered=false,sel=null;function renderQuiz(){answered=false;sel=null;$('qcount').textContent=`第 ${qi+1} / ${questions.length} 題`;$('qscore').textContent=`已答對 ${score} 題`;$('qprog').style.width=`${(qi+1)/questions.length*100}%`;let q=questions[qi];$('qtext').textContent=(qi>=20?'【高難度】':'')+q[0];$('qchoices').innerHTML=q[1].map((o,i)=>`<label><input type="radio" name="choice" value="${i}" onchange="sel=${i}" /> ${String.fromCharCode(65+i)}. ${o}</label>`).join('');$('qexplain').innerHTML='';$('qsubmit').disabled=false;$('qnext').disabled=true;$('qnext').textContent=qi===questions.length-1?'完成測驗':'下一題'}function submitQuiz(){if(answered)return;if(sel===null){$('qexplain').innerHTML='<div class="notice">請先選擇一個答案。</div>';return}answered=true;let q=questions[qi],ok=sel===q[2];if(ok)score++;$('qscore').textContent=`已答對 ${score} 題`;$('qexplain').innerHTML=`<div class="${ok?'good':'danger'}"><b>${ok?'答對了':'答錯了'}；正確答案：${String.fromCharCode(65+q[2])}</b><p>${q[3]}</p></div>`;$('qsubmit').disabled=true;$('qnext').disabled=false}function nextQuiz(){if(!answered)return;if(qi<questions.length-1){qi++;renderQuiz()}else{$('qexplain').innerHTML=`<div class="good"><b>測驗完成：${score} / ${questions.length} 題（${Math.round(score/questions.length*100)}%）</b><p>可重新測驗檢視題目；建議回到診療流程及台灣健保核對頁複習。</p></div>`;$('qnext').disabled=true}}function resetQuiz(){qi=0;score=0;renderQuiz()}renderQuiz();nhiToggle();rnToggle();
 </script></body></html>

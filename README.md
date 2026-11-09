@@ -6,15 +6,19 @@
 
 - HRCT UIP / probable UIP / indeterminate / alternative 引導
 - ATS 2022 PPF 生理、影像與症狀三構面計算
-- 依疾病類型、活動性、進展與肝腎／出血風險個別化建議
+- 治療計畫引擎 `PFE`（`/*ENGINE-START*/`）：急性處置 → 病因／免疫治療 → nintedanib、pirfenidone、nerandomilast 逐一評估（適應症、Child-Pugh、eGFR、CYP1A2／CYP3A、懷孕、出血）→ 支持療法與移植轉介 → 監測時程 → 失敗與升級
 - Nintedanib、Pirfenidone、Nerandomilast、Treprostinil 機轉與研究
-- 台灣 TFDA／健保 6.2.7 初步核對（診斷標準與給付標準分開）
-- 8 例合成病例、20 題可計分選擇題、可獨立收合的心智圖
+- 台灣 TFDA／健保 6.2.7 初步核對：IPF、SSc-ILD、PF-ILD 初次申請，以及續用／停藥（緩衝期）判讀
+- 11 例合成病例（含 3 例高難度，可帶入治療計畫與健保核對）、25 題可計分選擇題（含 5 題高難度）、可獨立收合的心智圖
 - 響應式版面、列印摘要、原始文件連結
 
 ## 本地使用
 
 直接以瀏覽器開啟 `index.html`，或執行 `python3 -m http.server 8000`，開啟 `http://localhost:8000`。
+
+## 測試
+
+`node tests.cjs`：引擎單元測試；有 Playwright 時另跑瀏覽器 e2e（`URL=` 可指定線上網址）。
 
 ## GitHub Pages
 
