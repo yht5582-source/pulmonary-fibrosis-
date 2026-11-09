@@ -100,6 +100,13 @@ console.log(`engine: ${pass} passed, ${fail} failed`);
  // quiz to the end
  await pg.evaluate(()=>showTab('quiz'));for(let i=0;i<25;i++){await pg.check('#qchoices input >> nth=0');await pg.click('#qsubmit');await pg.click('#qnext')}
  t((await pg.textContent('#qexplain')).includes('/ 25'),'quiz completes');
+ // mind map
+ await pg.evaluate(()=>showTab('mind'));const leaves=await pg.locator('#mindtree li.leaf').count();t(leaves>=180,'mind leaves '+leaves);
+ t(await pg.locator('#mindtree .mroot>li').count()===13,'13 branches');t(await pg.locator('#mindnum tr').count()>=15,'number table');
+ await pg.fill('#mindq','NUDT15');const vis=await pg.$$eval('#mindtree li.leaf',ls=>ls.filter(l=>l.checkVisibility()).map(l=>l.textContent));t(vis.length>=2&&vis.every(x=>x.includes('NUDT15')),'search NUDT15 '+vis.length);
+ await pg.fill('#mindq','');await pg.check('#mindkp');const kv=await pg.$$eval('#mindtree li.leaf',ls=>ls.filter(l=>l.checkVisibility()).length);t(kv>40&&kv<leaves,'key-point filter '+kv);
+ await pg.uncheck('#mindkp');await pg.click('text=全部收合');t(await pg.$$eval('#mindtree li.leaf',ls=>ls.filter(l=>l.checkVisibility()).length)===0,'collapse all');
+ await pg.fill('#mindq','zzqq');t((await pg.textContent('#mindcount')).includes('找不到'),'no match message');await pg.fill('#mindq','');
  await pg.setViewportSize({width:375,height:800});await pg.evaluate(()=>showTab('treat'));t(await pg.evaluate(()=>document.documentElement.scrollWidth<=376),'no horizontal scroll at 375');
  t(errs.length===0,'no page errors: '+errs.join('|'));
  await b.close();console.log(`e2e: ${e2} passed, ${ef} failed`);process.exit(fail||ef?1:0)})();

@@ -9,7 +9,7 @@
 - 治療計畫引擎 `PFE`（`/*ENGINE-START*/`）：急性處置 → 病因／免疫治療 → nintedanib、pirfenidone、nerandomilast 逐一評估（適應症、Child-Pugh、eGFR、CYP1A2／CYP3A、懷孕、出血）→ 支持療法與移植轉介 → 監測時程 → 失敗與升級
 - Nintedanib、Pirfenidone、Nerandomilast、Treprostinil 機轉與研究
 - 台灣 TFDA／健保 6.2.7 初步核對：IPF、SSc-ILD、PF-ILD 初次申請，以及續用／停藥（緩衝期）判讀
-- 11 例合成病例（含 3 例高難度，可帶入治療計畫與健保核對）、25 題可計分選擇題（含 5 題高難度）、可獨立收合的心智圖
+- 11 例合成病例（含 3 例高難度，可帶入治療計畫與健保核對）、25 題可計分選擇題（含 5 題高難度）、複習版心智圖（13 分支、224 個重點、搜尋、只看考點、必背數字表）
 - 響應式版面、列印摘要、原始文件連結
 
 ## 本地使用
